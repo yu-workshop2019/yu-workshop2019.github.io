@@ -55,5 +55,5 @@
 
 ## 問い合わせ
 
-![mail_address](mail_address.jpg)
+![mail_address](mail_address.png)
 

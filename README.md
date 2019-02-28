@@ -1,4 +1,4 @@
-# 山口大学工学部 ワークショップ 2019
+# 山口大学工学部 ワークショップ 2019  
 
 
 ---
@@ -80,7 +80,11 @@
 
 ## 資料・サンプルプログラム
 
-- 以下のサイト（github）からダウンロード可能です。
+- ワークショップの資料を以下のページに記載しています。
+
+[https://yu-workshop2019.github.io/manual.md]
+
+- サンプルプログラムは以下のサイト（github）からダウンロード可能です。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs](https://github.com/yu-workshop2019/yu-workshop2019_docs)
 

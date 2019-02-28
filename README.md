@@ -43,6 +43,16 @@
 
 ---
 
+## 持参するもの
+
+- ノートPC
+
+- ACアダプタ
+
+- LANケーブル
+
+---
+
 ## 問い合わせ
 
 ![mail_address](mail_address.jpg)

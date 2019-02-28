@@ -33,7 +33,7 @@
 
 - Raspberry Pi
 
-- Arduino
+- Arduino　など
 
 
 ### ソフトウェア
@@ -44,7 +44,7 @@
 
 - Python
 
-- シェルスクリプト
+- シェルスクリプト　など
 
 ---
 

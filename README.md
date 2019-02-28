@@ -82,7 +82,7 @@
 
 - ワークショップの資料を以下のページに掲載しています。
 
-[https://yu-workshop2019.github.io/manual.md](https://yu-workshop2019.github.io/manual.md)
+[https://yu-workshop2019.github.io/manual.md](/manual.md)
 
 - サンプルプログラムは以下のサイト（github）からダウンロード可能です。
 

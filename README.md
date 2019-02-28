@@ -98,6 +98,8 @@
 
 - PCの場合は[ここ](https://slack.com/intl/ja-jp/)から。
 
+[https://slack.com/intl/ja-jp/:embed]
+
 - androidデバイスの場合は[ここ](https://play.google.com/store/apps/details?id=com.Slack&hl=ja)からアプリをダウンロード。
 
 - iOSデバイスの場合は[ここ](https://itunes.apple.com/jp/app/slack/id618783545)からアプリをダウンロード。

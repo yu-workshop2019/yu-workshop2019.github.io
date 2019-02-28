@@ -82,7 +82,7 @@
 
 - 以下のサイト（github）からダウンロード可能です。
 
-[yu-workshop2019.github.io]()
+[https://github.com/yu-workshop2019/yu-workshop2019_docs](https://github.com/yu-workshop2019/yu-workshop2019_docs)
 
 ---
 

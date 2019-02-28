@@ -41,3 +41,9 @@
 
 - 無料
 
+---
+
+## 問い合わせ
+
+![mail_address](mail_address.jpg)
+

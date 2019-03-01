@@ -78,6 +78,8 @@
 
 ---
 
+![arduino_water](/arduino_water.mp4)
+
 ## とき
 
 - 調整中

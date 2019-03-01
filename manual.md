@@ -46,7 +46,7 @@
 
 以下の開発環境を想定しています。
 
-PCのOS：Microsoft Windows10
+ノートPCのOS：Microsoft Windows10
 
 Raspberry PiのOS：Raspbian PIXEL
 
@@ -55,6 +55,48 @@ Raspberry PiのOS：Raspbian PIXEL
 ```
 sudo apt-get install sl
 ```
+
+---
+
+### 1.ノートPCの準備
+
+以下のソフトをダウンロード・インストールしてください。
+
+- [Win32 Disk Imager](https://forest.watch.impress.co.jp/docs/review/1067836.html)
+
+  - SDカードにRaspbianOSを書き込んだり、バックアップしたりするためのソフトです。
+
+- [Tera Term](https://forest.watch.impress.co.jp/library/software/utf8teraterm/)
+
+  - ノートPCからRaspberry PiにSSHログインするためのソフトです。
+
+- [WinSCP](https://forest.watch.impress.co.jp/library/software/winscp/)
+  
+  - ノートPCからRaspberry Piにファイル転送するためのソフトです。
+  
+---
+
+
+### 1.
+
+---
+
+
+### 1.
+
+---
+
+### 1.
+
+---
+
+
+### 1.
+
+---
+
+
+### 1.
 
 ---
 

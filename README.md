@@ -80,11 +80,11 @@
 
 ### 作例
 
-- Arduinoと電動ポンプで水やりタイマーを製作した例  
+#### Arduinoと電動ポンプで水やりタイマーを製作した例  
 
 <video src="/arduino_water.mp4" width="480" height="360" controls></video>
 
-- ネットワークに接続したRaspberry PiとWebIOPiでスマートデバイスからLEDを遠隔制御した例  
+#### ネットワークに接続したRaspberry PiとWebIOPiでスマートデバイスからLEDを遠隔制御した例  
 
 <video src="/raspi_webiopi.mp4" width="480" height="360" controls></video>
 

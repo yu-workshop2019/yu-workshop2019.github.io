@@ -52,12 +52,6 @@ Raspberry PiのOS：Raspbian Stretch
 
 ---
 
-```
-sudo apt-get install sl
-```
-
----
-
 ### 2. ノートPCの準備
 
 1． ノートPCに以下のソフトをダウンロード・インストールする。

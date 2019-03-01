@@ -49,7 +49,17 @@
   
   - 参考：[Raspberry Pi - Wikipedia](https://ja.wikipedia.org/wiki/Raspberry_Pi)
 
-- Arduino　など
+- Arduino　
+
+![Arduino](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Arduino_Uno_004.jpg/320px-Arduino_Uno_004.jpg)
+
+  - 簡単にプログラミング可能なマイコンです。
+  
+  - 初心者でもさまざまなデジタル作品を手軽に作ることができます。
+  
+  - 開発環境や情報・ライブラリが充実しています。
+
+など
 
 
 ### ソフトウェア

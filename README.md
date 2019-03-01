@@ -114,7 +114,7 @@
 
 [https://yu-workshop2019.github.io/manual](/manual.html)
 
-- サンプルプログラムは以下のサイト（github）からダウンロード可能です。
+- サンプルプログラムは以下のサイト（GitHub）からダウンロード可能です。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs](https://github.com/yu-workshop2019/yu-workshop2019_docs)
 
@@ -127,6 +127,10 @@
 ![mail_address](mail_address.png)
 
 ※迷惑メール防止のため、画像化しています。
+
+## GitHubアカウント
+
+[https://github.com/yu-workshop2019](https://github.com/yu-workshop2019)
 
 ### Slack（チャットツール）
 

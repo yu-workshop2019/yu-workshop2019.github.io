@@ -128,7 +128,7 @@
 
 ※迷惑メール防止のため、画像化しています。
 
-## GitHubアカウント
+### GitHubアカウント
 
 [https://github.com/yu-workshop2019](https://github.com/yu-workshop2019)
 

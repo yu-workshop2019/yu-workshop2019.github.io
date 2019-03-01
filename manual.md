@@ -76,10 +76,28 @@ Raspberry PiのOS：Raspbian Stretch
 
 Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 
-1. 以下のページを参考にし、Win32 Disk Imagerを用いてmicroSDカードにRaspbian OSイメージを書き込む。
+以下のページを参考にし、Win32 Disk Imagerを用いてmicroSDカードにRaspbian OSイメージを書き込む。
 
 [第57回「改めましてラズベリーパイの基本！(2) Raspberry Pi イメージファイルのインストール＆バックアップ 2017年度版」](https://deviceplus.jp/hobby/raspberrypi_entry_057/)
 
+---
+
+### 4. Raspberry Piの起動
+
+いよいよRaspberry Piを起動する。
+
+1. Raspbian OSを書き込んだmicroSDカードをRaspberry Piにセットする。
+
+2. Raspberry Piに以下のデバイスを接続する。
+  - ディスプレイ（HDMI）
+  - キーボード（USB）
+  - マウス（USB）
+  
+3. Raspberry Piの電源端子（microUSBコネクタ）にACアダプタを接続する。この時点でRaspberry Piが起動する。
+
+4. 画面に意味不明な文字の羅列が表示されるのを眺める。
+
+---
 
 ### 3. httpのプロキシ回避
 

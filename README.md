@@ -80,7 +80,7 @@
 
 ### 作例
 
-- Arduinoと電動ポンプで水やりタイマーを制作した例  
+- Arduinoと電動ポンプで水やりタイマーを製作した例  
 
 <video src="/arduino_water.mp4" width="480" height="360" controls></video>
 

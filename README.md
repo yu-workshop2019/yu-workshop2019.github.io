@@ -53,11 +53,13 @@
 
 ![Arduino](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Arduino_Uno_004.jpg/320px-Arduino_Uno_004.jpg)
 
-  - 簡単にプログラミング可能なマイコンです。
+  - 簡単にプログラム可能なマイコンです。
   
   - 初心者でもさまざまなデジタル作品を手軽に作ることができます。
   
   - 開発環境や情報・ライブラリが充実しています。
+  
+  - 参考：[Arduino - Wikipedia](https://ja.wikipedia.org/wiki/Arduino)
 
 など
 

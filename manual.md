@@ -46,7 +46,7 @@
 
 以下の開発環境で実行することを想定しています。
 
-- Microsoft Windows10
+OS:Microsoft Windows10
 
 
 

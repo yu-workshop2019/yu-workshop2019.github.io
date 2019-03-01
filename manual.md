@@ -79,7 +79,22 @@ sudo apt-get install sl
 ---
 
 
-### 3. 
+### 3. aptのプロキシ回避
+
+1. nanoで`/etc/apt/apt.conf`を編集。
+
+`$sudo nano /etc/apt/apt.conf`
+
+2. `/etc/apt/apt.conf`に以下を追記
+
+```
+Acquire::http::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
+Acquire::https::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
+Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
+
+```
+
+3. 保存して終了。
 
 ---
 

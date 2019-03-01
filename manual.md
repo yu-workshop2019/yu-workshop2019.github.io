@@ -91,7 +91,6 @@ sudo apt-get install sl
 Acquire::http::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 Acquire::https::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
-
 ```
 
 3. 保存して終了。

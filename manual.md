@@ -74,7 +74,7 @@ sudo apt-get install sl
   
   - ノートPCからRaspberry Piにファイル転送するためのソフトです。
   
-2. [Raspberry Pi財団の公式サイト]から、RaspbianのイメージファイルをノートPCにダウンロード・解凍する。
+2. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、RaspbianのイメージファイルをノートPCにダウンロード・解凍する。
   
 ---
 

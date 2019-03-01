@@ -53,6 +53,8 @@
 
 ![Arduino](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Arduino_Uno_004.jpg/320px-Arduino_Uno_004.jpg)
 
+  - 「アルデュイーノ」と読みます。
+  
   - 簡単にプログラム可能なマイコンです。
   
   - 初心者でもさまざまなデジタル作品を手軽に作ることができます。
@@ -132,10 +134,3 @@
 
 [https://github.com/yu-workshop2019](https://github.com/yu-workshop2019)
 
-### Slack（チャットツール）
-
-- PCの場合は[ここ](https://slack.com/intl/ja-jp/)から。
-
-- androidデバイスの場合は[ここ](https://play.google.com/store/apps/details?id=com.Slack&hl=ja)からアプリをダウンロード。
-
-- iOSデバイスの場合は[ここ](https://itunes.apple.com/jp/app/slack/id618783545)からアプリをダウンロード。

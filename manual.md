@@ -78,6 +78,24 @@ sudo apt-get install sl
   
 ---
 
+### 3. httpのプロキシ回避
+
+1. nanoで`~/.bashrc`を編集。
+
+`$sudo nano ~/.bashrc`
+
+2. `~/.bashrc`末尾に以下を追記
+
+```
+export http_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
+export https_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
+export ftp_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
+```
+
+3. 保存して終了。
+
+---
+
 
 ### 3. aptのプロキシ回避
 

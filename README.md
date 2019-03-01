@@ -37,6 +37,8 @@
 
 - Raspberry Pi
 
+![Raspberry Pi](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Raspberry_Pi_3_Model_B.png/320px-Raspberry_Pi_3_Model_B.png)
+
   - 「ラズベリーパイ」と読みます。
 
   - 手のひらサイズのシングルボードコンピュータです。

@@ -45,7 +45,7 @@
   
   - 本体から出ているピンにさまざまな電子部品を接続し、制御することができます。
   
-  - 参考：[Wikipedia:Raspberry Pi](https://ja.wikipedia.org/wiki/Raspberry_Pi)
+  - 参考：[Raspberry Pi - Wikipedia](https://ja.wikipedia.org/wiki/Raspberry_Pi)
 
 - Arduino　など
 

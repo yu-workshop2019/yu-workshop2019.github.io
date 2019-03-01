@@ -44,11 +44,13 @@
 
 ### 1.開発環境
 
-以下の開発環境で実行することを想定しています。
+以下の開発環境を想定しています。
 
-OS:Microsoft Windows10
+PCのOS：Microsoft Windows10
 
+Raspberry PiのOS：Raspbian PIXEL
 
+---
 
 ```
 sudo apt-get install sl

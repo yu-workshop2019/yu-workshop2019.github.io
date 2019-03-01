@@ -48,7 +48,7 @@
 
 ノートPCのOS：Microsoft Windows10
 
-Raspberry PiのOS：Raspbian PIXEL
+Raspberry PiのOS：Raspbian Stretch
 
 ---
 

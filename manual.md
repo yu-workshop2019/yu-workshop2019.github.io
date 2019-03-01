@@ -44,7 +44,7 @@
 
 ### 1. 開発環境
 
-以下の開発環境を想定しています。
+本資料は、以下の環境で開発されることを想定しています。
 
 ノートPCのOS：Microsoft Windows10
 
@@ -68,9 +68,18 @@ Raspberry PiのOS：Raspbian Stretch
   
   - ノートPCからRaspberry Piにファイル転送するためのソフトです。
   
-2. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、RaspbianのイメージファイルをノートPCにダウンロード・解凍する。
+2. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、Raspbianのイメージファイル（サイズ大）をノートPCにダウンロード・解凍する。
   
 ---
+
+### 3. Raspbian OSイメージのmicroSDカードへの書き込み
+
+Raspberry Piでは、microSDカードにOSを書き込んで使用する。
+
+1. 以下のページを参考にし、Win32 Disk Imagerを用いてmicroSDカードにRaspbian OSイメージを書き込む。
+
+[第57回「改めましてラズベリーパイの基本！(2) Raspberry Pi イメージファイルのインストール＆バックアップ 2017年度版」](https://deviceplus.jp/hobby/raspberrypi_entry_057/)
+
 
 ### 3. httpのプロキシ回避
 

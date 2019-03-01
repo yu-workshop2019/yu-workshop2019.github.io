@@ -37,6 +37,16 @@
 
 - Raspberry Pi
 
+  - 「ラズベリーパイ」と読みます。
+
+  - 手のひらサイズのシングルボードコンピュータです。
+  
+  - 小さいけれどLinuxが動く立派なコンピュータです。
+  
+  - 本体から出ているピンにさまざまな電子部品を接続し、制御することができます。
+  
+  - 参考：[Wikipedia:Raspberry Pi](https://ja.wikipedia.org/wiki/Raspberry_Pi)
+
 - Arduino　など
 
 

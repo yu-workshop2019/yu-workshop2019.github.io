@@ -58,9 +58,9 @@ sudo apt-get install sl
 
 ---
 
-### 1. ノートPCの準備
+### 2. ノートPCの準備
 
-以下のソフトをダウンロード・インストールしてください。
+1． ノートPCに以下のソフトをダウンロード・インストールする。
 
 - [Win32 Disk Imager](https://forest.watch.impress.co.jp/docs/review/1067836.html)
 
@@ -74,10 +74,12 @@ sudo apt-get install sl
   
   - ノートPCからRaspberry Piにファイル転送するためのソフトです。
   
+2. [Raspberry Pi財団の公式サイト]から、RaspbianのイメージファイルをノートPCにダウンロード・解凍する。
+  
 ---
 
 
-### 1. 
+### 3. 
 
 ---
 

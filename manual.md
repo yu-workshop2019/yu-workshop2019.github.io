@@ -5,6 +5,10 @@
 
 ## 解説資料を掲載しています。
 
+```
+sudo apt-get install sl
+```
+
 ---
 
 [トップページへ](https://yu-workshop2019.github.io/)

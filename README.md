@@ -78,7 +78,8 @@
 
 ---
 
-![arduino_water](/arduino_water.mp4)
+<video src="/arduino_water.mp4" width="480" height="360" controls></video>
+
 
 ## とき
 

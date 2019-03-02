@@ -207,8 +207,8 @@ Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 `$sudo apt-get update`
 ターミナルにずらずらと文字がたくさん出る。
 
-2. aptによって`sl`をインストールする。
-`$sudo apt-get install sl`
+2. aptによって`sl`をインストールする。  
+`$sudo apt-get install sl`  
 ターミナルにずらずらと文字がたくさん出る。
 
 3. `sl`がインストールされたか確認する。

@@ -175,7 +175,6 @@ export ftp_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 ### 7. aptのプロキシ回避
 
 1. nanoで`/etc/apt/apt.conf`を編集。
-
 `$sudo nano /etc/apt/apt.conf`
 
 2. `/etc/apt/apt.conf`に以下を追記
@@ -202,39 +201,27 @@ Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 - 以下、`sl`というソフト（プログラム）のインストールを例に、aptの使い方を示す。
 
 0. `sl`を実行してみる。当然、今`sl`はまだインストールされていないので、「そんなものはないよ」というメッセージが出るだけ。
-
 `$sl`
 
 1. aptが管理しているデータベースをアップデートする。
-
 `$sudo apt-get update`
-
 ターミナルにずらずらと文字がたくさん出る。
 
 2. aptによって`sl`をインストールする。
-
 `$sudo apt-get install sl`
-
 ターミナルにずらずらと文字がたくさん出る。
 
 3. `sl`がインストールされたか確認する。
-
 `$sl`
-
 正しくインストールされていると、ターミナル上に...？
 
 4. プログラムをアンインストールするには以下。
-
 `$sudo apt-get purge sl`
 
 5. aptで管理されている中からプログラムを探すには以下。
-
 完全一致
-
 `$sudo apt list sl`
-
 部分一致
-
 `$sudo apt search sl`
 
 ---
@@ -244,15 +231,11 @@ Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 Raspberry Piで日本語表示や日本語入力ができるようにする。
 
 1. 日本語入力メソッドのインストール
-
 Googleが開発した入力メソッドであるmozc（モズク）を使用。
-
 `$sudo apt-get install fcitx-mozc`
 
 2. 日本語フォントのインストール
-
 これまたGoogleが提供している日本語向けフォントであるNotoフォントを使用。
-
 `$ sudo apt-get install fonts-note`
 
 3. 半角/全角キーで入力切替ができるようになっているはず。
@@ -266,13 +249,11 @@ Googleが開発した入力メソッドであるmozc（モズク）を使用。
 - 普通のPCと異なり、Raspberry Piには時刻を保持しておくための仕組みがない。そのため、起動していない状態が長く続くと時刻が狂う。
 
 - Raspberry Piの現在時刻を確認するには、以下のようにする。
-
 `$date`
 
 - 手動で時刻合わせをするには`date`コマンドを用いる。
 
 - Raspberry Piの日付時刻を2019年04月01日15時30分00秒にするには、以下のようにする。
-
 `$sudo date -s "2019/04/01 15:30:00"`
 
 ---

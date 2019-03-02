@@ -10,9 +10,11 @@
 
 ### Slack（チャットツール）
 
-- PCの場合は[ここ](https://slack.com/intl/ja-jp/)から。  
-- androidデバイスの場合は[ここ](https://play.google.com/store/apps/details?id=com.Slack&hl=ja)からアプリをダウンロード。 
-- iOSデバイスの場合は[ここ](https://itunes.apple.com/jp/app/slack/id618783545)からアプリをダウンロード。 
+- PCの場合は[ここ](https://slack.com/intl/ja-jp/)から。
+
+- androidデバイスの場合は[ここ](https://play.google.com/store/apps/details?id=com.Slack&hl=ja)からアプリをダウンロード。
+
+- iOSデバイスの場合は[ここ](https://itunes.apple.com/jp/app/slack/id618783545)からアプリをダウンロード。
 
 ---
 
@@ -66,7 +68,8 @@
   
   - ノートPCからRaspberry Piにファイル転送するためのソフトです。
   
-2. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、Raspbianのイメージファイル（サイズ大）をノートPCにダウンロード・解凍する。
+2. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、Raspbianのイメージファイル（サイズ大）を
+ノートPCにダウンロード・解凍する。
   
 ---
 
@@ -84,16 +87,13 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 
 いよいよRaspberry Piを起動する。
 
-1. Raspbian OSを書き込んだmicroSDカードをRaspberry Piにセットする。
-
-2. Raspberry Piに以下のデバイスを接続する。
+1. Raspbian OSを書き込んだmicroSDカードをRaspberry Piにセットする。  
+1. Raspberry Piに以下のデバイスを接続する。
   - ディスプレイ（HDMI）
   - キーボード（USB）
-  - マウス（USB）
-  
-3. Raspberry Piの電源端子（microUSBコネクタ）にACアダプタを接続する。この時点でRaspberry Piが起動する。
-
-4. 画面に意味不明な文字の羅列が表示されるのを眺める。
+  - マウス（USB）  
+1. Raspberry Piの電源端子（microUSBコネクタ）にACアダプタを接続する。この時点でRaspberry Piが起動する。  
+1. 画面に意味不明な文字の羅列が表示されるのを眺める。  
 
 ---
 
@@ -101,22 +101,14 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 
 初めてRaspberry Piを使う前に、各種初期設定を行う。
 
-1. ターミナルを立ち上げる。デスクトップ画面左上の黒いアイコンをクリック。
-
-2. 文字だけが表示された黒い画面が現れる。Linuxではこの画面で作業することが多い。
-
-3. ターミナルにコマンドを入力する。以下、コマンドには文頭に`$`をつけ、`$hogehoge`のようにあらわす。ただし、`$`自体は入力しない。
-コマンドを入力し終えたらEnterキーを押す。
-
-  `$sudo raspi-config`
-
-4. ファイルシステムを拡張する。
-
-5. ロケール・キーボードレイアウト・Wi-Fiカントリーなどを設定する。
-
-6. 設定を終えたら再起動して変更を反映させる。今後、同様に何かシステム設定を変更したときには、変更を反映させるために再起動する。
-
-  `$sudo reboot`
+1. ターミナルを立ち上げる。デスクトップ画面左上の黒いアイコンをクリック。  
+1. 文字だけが表示された黒い画面が現れる。Linuxではこの画面で作業することが多い。  
+1. ターミナルにコマンドを入力する。以下、コマンドには文頭に`$`をつけ、`$hogehoge`のようにあらわす。  
+ただし、`$`自体は入力しない。コマンドを入力し終えたらEnterキーを押す。  `$sudo raspi-config`
+1. ファイルシステムを拡張する。  
+1. ロケール・キーボードレイアウト・Wi-Fiカントリーなどを設定する。  
+1. 設定を終えたら再起動して変更を反映させる。今後、同様に何かシステム設定を変更したときには、変更を反映させるために再起動する。  
+`$sudo reboot`
 
 ---
 

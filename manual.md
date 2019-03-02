@@ -10,11 +10,9 @@
 
 ### Slack（チャットツール）
 
-- PCの場合は[ここ](https://slack.com/intl/ja-jp/)から。
-
-- androidデバイスの場合は[ここ](https://play.google.com/store/apps/details?id=com.Slack&hl=ja)からアプリをダウンロード。
-
-- iOSデバイスの場合は[ここ](https://itunes.apple.com/jp/app/slack/id618783545)からアプリをダウンロード。
+- PCの場合は[ここ](https://slack.com/intl/ja-jp/)から。  
+- androidデバイスの場合は[ここ](https://play.google.com/store/apps/details?id=com.Slack&hl=ja)からアプリをダウンロード。 
+- iOSデバイスの場合は[ここ](https://itunes.apple.com/jp/app/slack/id618783545)からアプリをダウンロード。 
 
 ---
 

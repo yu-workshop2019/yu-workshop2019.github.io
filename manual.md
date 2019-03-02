@@ -245,13 +245,13 @@ Raspberry Piで日本語表示や日本語入力ができるようにする。
 
 1. 日本語入力メソッドのインストール
 
-- Googleが開発した入力メソッドであるmozc（モズク）を使用。
+Googleが開発した入力メソッドであるmozc（モズク）を使用。
 
 `$sudo apt-get install fcitx-mozc`
 
 2. 日本語フォントのインストール
 
-- これまたGoogleが提供している日本語向けフォントであるNotoフォントを使用。
+これまたGoogleが提供している日本語向けフォントであるNotoフォントを使用。
 
 `$ sudo apt-get install fonts-note`
 

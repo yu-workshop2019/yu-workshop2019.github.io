@@ -88,7 +88,7 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 いよいよRaspberry Piを起動する。
 
 1. Raspbian OSを書き込んだmicroSDカードをRaspberry Piにセットする。  
-1. Raspberry Piに以下のデバイスを接続する。
+1. Raspberry Piに以下のデバイスを接続する。  
   - ディスプレイ（HDMI）
   - キーボード（USB）
   - マウス（USB）  
@@ -103,8 +103,9 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 
 1. ターミナルを立ち上げる。デスクトップ画面左上の黒いアイコンをクリック。  
 1. 文字だけが表示された黒い画面が現れる。Linuxではこの画面で作業することが多い。  
-1. ターミナルにコマンドを入力する。以下、コマンドには文頭に`$`をつけ、`$hogehoge`のようにあらわす。  
-ただし、`$`自体は入力しない。コマンドを入力し終えたらEnterキーを押す。  `$sudo raspi-config`
+1. ターミナルにコマンドを入力する。以下、コマンドには文頭に`$`をつけ、`$hogehoge`のようにあらわす。
+ただし、`$`自体は入力しない。コマンドを入力し終えたらEnterキーを押す。  
+`$sudo raspi-config`
 1. ファイルシステムを拡張する。  
 1. ロケール・キーボードレイアウト・Wi-Fiカントリーなどを設定する。  
 1. 設定を終えたら再起動して変更を反映させる。今後、同様に何かシステム設定を変更したときには、変更を反映させるために再起動する。  
@@ -144,20 +145,15 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 
 ### 6. httpのプロキシ回避
 
-1. nanoで`~/.bashrc`を編集。
-
+1. nanoで`~/.bashrc`を編集。  
 `$sudo nano ~/.bashrc`
-
-2. `~/.bashrc`末尾に以下を追記
-
+2. `~/.bashrc`末尾に以下を追記  
 ```
 export http_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 export https_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 export ftp_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 ```
-
 3. 保存してnanoを終了。
-
 4． `$sudo reboot`
 
 ---

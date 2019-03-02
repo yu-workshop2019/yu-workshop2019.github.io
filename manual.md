@@ -46,9 +46,9 @@
 
 本資料は、以下の環境で開発されることを想定しています。
 
-ノートPCのOS：Microsoft Windows10
+- ノートPCのOS：Microsoft Windows10
 
-Raspberry PiのOS：Raspbian Stretch
+- Raspberry PiのOS：Raspbian Stretch
 
 ---
 
@@ -149,7 +149,9 @@ export https_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 export ftp_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 ```
 
-3. 保存して終了。
+3. 保存してnanoを終了。
+
+4． `$sudo reboot`
 
 ---
 
@@ -168,26 +170,28 @@ Acquire::https::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 ```
 
-3. 保存して終了。
+3. 保存してnanoを終了。
+
+4． `$sudo reboot`
 
 ---
 
 
-### 1. 
+### 8. 
 
 ---
 
-### 1. 
-
----
-
-
-### 1. 
+### 9. 
 
 ---
 
 
-### 1. 
+### 10. 
+
+---
+
+
+### 11. 
 
 ---
 

@@ -64,7 +64,7 @@
 
   - ノートPCからRaspberry PiにSSHログインするためのソフトです。
 
-- [WinSCP](https://forest.watch.impress.co.jp/library/software/winscp/)
+- [WinSCP](https://forest.watch.impress.co.jp/library/software/winscp/)  
   
   - ノートPCからRaspberry Piにファイル転送するためのソフトです。
   
@@ -133,9 +133,11 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 
 - ターミナル上で使用できるエディタに"nano"と呼ばれるものがあり、気軽に使いやすいので便利。
 
-- nanoを起動するには、`$sudo nano`
+- nanoを起動するには、  
+`$sudo nano`
 
-- `sample.txt`という名前のファイルを開いてnanoで編集するには、`$sudo nano sample.txt`
+- `sample.txt`という名前のファイルを開いてnanoで編集するには、  
+`$sudo nano sample.txt`
 
 - 上書き保存するには、`Ctrl+O`を押した後に`Enter`
 
@@ -146,33 +148,29 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 ### 6. httpのプロキシ回避
 
 1. nanoで`~/.bashrc`を編集。  
-`$sudo nano ~/.bashrc`
+`$sudo nano ~/.bashrc`  
 2. `~/.bashrc`末尾に以下を追記  
 ```
 export http_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 export https_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 export ftp_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 ```
-3. 保存してnanoを終了。
+3. 保存してnanoを終了。  
 4． `$sudo reboot`
 
 ---
 
 ### 7. aptのプロキシ回避
 
-1. nanoで`/etc/apt/apt.conf`を編集。
-`$sudo nano /etc/apt/apt.conf`
-
-2. `/etc/apt/apt.conf`に以下を追記
-
+1. nanoで`/etc/apt/apt.conf`を編集。  
+`$sudo nano /etc/apt/apt.conf`  
+2. `/etc/apt/apt.conf`に以下を追記  
 ```
 Acquire::http::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 Acquire::https::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 ```
-
-3. 保存してnanoを終了。
-
+3. 保存してnanoを終了。  
 4． `$sudo reboot`
 
 ---
@@ -186,29 +184,24 @@ Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
 
 - 以下、`sl`というソフト（プログラム）のインストールを例に、aptの使い方を示す。
 
-0. `sl`を実行してみる。当然、今`sl`はまだインストールされていないので、「そんなものはないよ」というメッセージが出るだけ。
-`$sl`
-
-1. aptが管理しているデータベースをアップデートする。
-`$sudo apt-get update`
-ターミナルにずらずらと文字がたくさん出る。
-
+0. `sl`を実行してみる。当然、今`sl`はまだインストールされていないので、「そんなものはないよ」というメッセージが出るだけ。  
+`$sl`  
+1. aptが管理しているデータベースをアップデートする。  
+`$sudo apt-get update`  
+ターミナルにずらずらと文字がたくさん出る。  
 2. aptによって`sl`をインストールする。  
 `$sudo apt-get install sl`  
-ターミナルにずらずらと文字がたくさん出る。
-
-3. `sl`がインストールされたか確認する。
-`$sl`
-正しくインストールされていると、ターミナル上に...？
-
-4. プログラムをアンインストールするには以下。
-`$sudo apt-get purge sl`
-
-5. aptで管理されている中からプログラムを探すには以下。
-完全一致
-`$sudo apt list sl`
-部分一致
-`$sudo apt search sl`
+ターミナルにずらずらと文字がたくさん出る。  
+3. `sl`がインストールされたか確認する。  
+`$sl`  
+正しくインストールされていると、ターミナル上に...？  
+4. プログラムをアンインストールするには以下。  
+`$sudo apt-get purge sl`  
+5. aptで管理されている中からプログラムを探すには以下。  
+完全一致  
+`$sudo apt list sl`  
+部分一致  
+`$sudo apt search sl`  
 
 ---
 

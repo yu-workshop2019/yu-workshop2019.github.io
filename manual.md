@@ -44,7 +44,9 @@
 
 ### 1. 開発環境
 
-本資料は、以下の環境で開発されることを想定しています。
+本資料は、以下の環境で開発されることを想定している。
+
+- Raspberry Pi3 Model B
 
 - ノートPCのOS：Microsoft Windows10
 
@@ -58,16 +60,16 @@
 
 - [Win32 Disk Imager](https://forest.watch.impress.co.jp/docs/review/1067836.html)
 
-  - SDカードにRaspbianOSを書き込んだり、バックアップしたりするためのソフトです。
+  - SDカードにRaspbianOSを書き込んだり、バックアップしたりするためのソフト。
 
 - [Tera Term](https://forest.watch.impress.co.jp/library/software/utf8teraterm/)
 
-  - ノートPCからRaspberry PiにSSHログインするためのソフトです。
+  - ノートPCからRaspberry PiにSSHログインするためのソフト。
 
 - [WinSCP](https://forest.watch.impress.co.jp/library/software/winscp/)  
   
-  - ノートPCからRaspberry Piにファイル転送するためのソフトです。
-  
+  - ノートPCからRaspberry Piにファイル転送するためのソフト。  
+    
 2. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、Raspbianのイメージファイル（サイズ大）を
 ノートPCにダウンロード・解凍する。
   
@@ -254,7 +256,7 @@ Googleが開発した入力メソッドであるmozc（モズク）を使用。
 ---
 
 
-### 11. 
+### 12. 
 
 ---
 

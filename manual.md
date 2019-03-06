@@ -306,10 +306,28 @@ Raspberry Piを裏返したときに、GPIOの根本の半田部分が1本だけ
 1番ピンを目印として、上記サイトで示されているピン配置図と実際のピンの並びを比較する。
 
 GPIOの配置や、現在の各ピンの状態などは、コマンドラインからも確認/変更することができる。  
-`WiringPi`というパッケージを用いる。Raspbianには最初からインストールされている。
+`WiringPi`というパッケージを用いる。Raspbianには最初からインストールされている。  
 [コマンドラインからGPIOを操作する - IT父さんのロボブログ](http://tomaberry.hatenablog.com/entry/2017/02/12/155910)
-- GPIOの現在の状態を確認  
+
+一例として、GPIO26を使用して、LEDを点灯/消灯させてみる（Lチカ）。  
+1. Raspberry PiにLEDを接続するために以下のような回路を作る。  
+[]()  
+2. GPIO26の現在の状態を確認  
 `$gpio readall` 
+3. GPIO26を出力に設定  
+`$gpio -g mode 26 out`  
+4. 設定が反映されたか確認  
+`$gpio readall`  
+5. GPIO26をHIGH（3.3V）にする。GPIO26に電流が流れ、LEDが点灯する。  
+`$gpio -g write 26 1`  
+6. 設定が反映されたか確認  
+`$gpio readall`  
+7. GPIO26をLOW（0V）にする。GPIO26に電流が流なくなり、LEDが消灯する。
+`$gpio -g write 26 0`
+8. 設定が反映されたか確認  
+`$gpio readall`  
+
+
 
 ---
 

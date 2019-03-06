@@ -299,9 +299,9 @@ Raspberry Piには40本のGPIO（入出力端子）が備えられており、�
 これらの40本のGPIOにはそれぞれ機能が割り当てられており、GPIOを使用しようとするときには、各GPIOの機能を把握しておかねばならない。  
 GPIOに割り当てられた機能の詳細については以下のサイトで確認できる。いずれも記載されている内容は同じである。
 
-[RaspberryPi2のPin配置](http://www.ic.daito.ac.jp/~mizutani/raspi/raspi_pins.html)
-[ツール・ラボ >> 第22回 Raspberry PiのGPIO概要 ](https://tool-lab.com/make/raspberrypi-startup-22/)
-[ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)
+[RaspberryPi2のPin配置](http://www.ic.daito.ac.jp/~mizutani/raspi/raspi_pins.html)  
+[ツール・ラボ >> 第22回 Raspberry PiのGPIO概要 ](https://tool-lab.com/make/raspberrypi-startup-22/)  
+[ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)  
 
 Raspberry Piを裏返したときに、GPIOの根本の半田部分が1本だけ四角くなっている（他は円形）。これが1番ピンである。  
 1番ピンを目印として、上記サイトで示されているピン配置図と実際のピンの並びを比較する。

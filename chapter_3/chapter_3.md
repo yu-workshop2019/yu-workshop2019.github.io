@@ -38,7 +38,7 @@ GPIOの配置や、現在の各ピンの状態などは、コマンドライン�
 `$gpio -g write 26 1`  
 6. 設定が反映されたか確認  
 `$gpio readall`  
-7. GPIO26をLOW（0V）にする。GPIO26に電流が流なくなり、LEDが消灯する。  
+7. GPIO26をLOW（0V）にする。GPIO26に電流が流れなくなり、LEDが消灯する。  
 `$gpio -g write 26 0`  
 8. 設定が反映されたか確認  
 `$gpio readall`  

@@ -27,7 +27,7 @@ GPIOの配置や、現在の各ピンの状態などは、コマンドライン�
 
 一例として、GPIO26を使用して、LEDを点灯/消灯させてみる（Lチカ）。  
 1. Raspberry PiにLEDを接続するために以下のような回路を作る。  
-[]()  
+![raspi_ltica](raspi_ltica.png)  
 2. GPIO26の現在の状態を確認  
 `$gpio readall` 
 3. GPIO26を出力に設定  

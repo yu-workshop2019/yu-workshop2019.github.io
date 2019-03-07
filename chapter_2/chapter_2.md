@@ -3,44 +3,10 @@
 
 ---
 
-## 解説資料を掲載しています。
+## 第2章 Raspberry Piのセットアップと初期設定
 
 ---
 
-
-### Slack（チャットツール）
-
-- PCの場合は[ここ](https://slack.com/intl/ja-jp/)から。
-
-- androidデバイスの場合は[ここ](https://play.google.com/store/apps/details?id=com.Slack&hl=ja)からアプリをダウンロード。
-
-- iOSデバイスの場合は[ここ](https://itunes.apple.com/jp/app/slack/id618783545)からアプリをダウンロード。
-
----
-
-### Raspberry Pi関連の参考書籍
-
-ここで紹介する書籍は、すべて工学部図書館で貸出可能です。
-
-- [Raspberry Piで学ぶ電子工作](http://bluebacks.kodansha.co.jp/books/9784062578912/appendix/)
-
-- [実例で学ぶRaspberry Pi電子工作](http://bluebacks.kodansha.co.jp/books/9784062579506/appendix/)
-
-- [Raspberry Piクックブック](https://www.oreilly.co.jp/books/9784873116907/)
-
-- [Raspberry Piで学ぶ ROSロボット入門](https://www.rt-shop.jp/index.php?main_page=product_info&products_id=3540)
-
----
-
-### Arduino関連の参考書籍
-
-ここで紹介する書籍は、すべて工学部図書館で貸出可能です。
-
-- [Arduinoをはじめよう 第3版](https://www.oreilly.co.jp/books/9784873117331/)
-
-- [Prototyping Lab 第2版 --「作りながら考える」ためのArduino実践レシピ](https://www.oreilly.co.jp/books/9784873117898/)
-
----
 
 ### 1. 開発環境
 
@@ -288,47 +254,10 @@ Linuxコマンドは星の数ほどあり、そのすべてを解説すること
   - `cat`コマンドはファイルを表示するだけで、編集することはできない。
   
   
-
 ---
 
 
-### 12. GPIOの制御
+[目次へ](https://yu-workshop2019.github.io/manual)
 
-Raspberry Piには40本のGPIO（入出力端子）が備えられており、これらのピンにLEDやセンサなどの電子部品を接続・制御することができる。  
-これらの40本のGPIOにはそれぞれ機能が割り当てられており、GPIOを使用しようとするときには、各GPIOの機能を把握しておかねばならない。  
-GPIOに割り当てられた機能の詳細については以下のサイトで確認できる。いずれも記載されている内容は同じである。
-
-[RaspberryPi2のPin配置](http://www.ic.daito.ac.jp/~mizutani/raspi/raspi_pins.html)  
-[ツール・ラボ >> 第22回 Raspberry PiのGPIO概要 ](https://tool-lab.com/make/raspberrypi-startup-22/)  
-[ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)  
-
-Raspberry Piを裏返したときに、GPIOの根本の半田部分が1本だけ四角くなっている（他は円形）。これが1番ピンである。
-1番ピンを目印として、上記サイトで示されているピン配置図と実際のピンの並びを比較する。
-
-GPIOの配置や、現在の各ピンの状態などは、コマンドラインからも確認/変更することができる。  
-`WiringPi`というパッケージを用いる。Raspbianには最初からインストールされている。  
-[コマンドラインからGPIOを操作する - IT父さんのロボブログ](http://tomaberry.hatenablog.com/entry/2017/02/12/155910)
-
-一例として、GPIO26を使用して、LEDを点灯/消灯させてみる（Lチカ）。  
-1. Raspberry PiにLEDを接続するために以下のような回路を作る。  
-[]()  
-2. GPIO26の現在の状態を確認  
-`$gpio readall` 
-3. GPIO26を出力に設定  
-`$gpio -g mode 26 out`  
-4. 設定が反映されたか確認  
-`$gpio readall`  
-5. GPIO26をHIGH（3.3V）にする。GPIO26に電流が流れ、LEDが点灯する。  
-`$gpio -g write 26 1`  
-6. 設定が反映されたか確認  
-`$gpio readall`  
-7. GPIO26をLOW（0V）にする。GPIO26に電流が流なくなり、LEDが消灯する。  
-`$gpio -g write 26 0`  
-8. 設定が反映されたか確認  
-`$gpio readall`  
-
-
-
----
 
 [トップページへ](https://yu-workshop2019.github.io/)

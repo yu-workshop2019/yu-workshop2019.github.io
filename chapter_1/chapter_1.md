@@ -42,17 +42,7 @@
 
 ---
 
-### 1. 開発環境
-
-本資料は、以下の環境で開発されることを想定している。
-
-- Raspberry Pi3 Model B
-
-- ノートPCのOS：Microsoft Windows10
-
-- Raspberry PiのOS：Raspbian Stretch
-
----
+[次の章へ](https://yu-workshop2019.github.io/chapter_2/chapter_2)
 
 
 [目次へ](https://yu-workshop2019.github.io/manual)

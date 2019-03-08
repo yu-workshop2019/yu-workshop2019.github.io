@@ -42,7 +42,7 @@ Pythonプログラムは、拡張子が`.py`で表される。メモ帳などの
 
 次の手順に従い、Raspberry Pi上で`hello.py`を実行する。  
 1. `hello.py`を`/home/pi`にコピーする。  
-2.ターミナルを立ち上げる。  
+2. ターミナルを立ち上げる。  
 3. `hello.py`を実行する。  
 `$python hello.py`  
 

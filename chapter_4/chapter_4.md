@@ -36,8 +36,8 @@ Pythonプログラムが意図したとおりに動かないときには、イ�
 ### 3. Hello, world!
 
 まずは簡単なPythonプログラムを動かしてみよう。
-以下のサイトから、最も基本的なPythonのプログラムをダウンロードする。
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py)
+以下のサイトから、最も基本的なPythonのプログラムをダウンロードする。  
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py)  
 Pythonプログラムは、拡張子が`.py`で表される。メモ帳などのエディタで開いて編集することができる。
 
 `hello.py`は、3行の簡単なプログラムである。

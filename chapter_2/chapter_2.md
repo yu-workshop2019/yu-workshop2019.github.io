@@ -22,7 +22,7 @@
 
 ### 2. ノートPCの準備
 
-1． ノートPCに以下のソフトをダウンロード・インストールする。
+ノートPCに以下のソフトをダウンロード・インストールする。
 
 - [Win32 Disk Imager](https://forest.watch.impress.co.jp/docs/review/1067836.html)
 
@@ -35,18 +35,16 @@
 - [WinSCP](https://forest.watch.impress.co.jp/library/software/winscp/)  
   
   - ノートPCからRaspberry Piにファイル転送するためのソフト。  
-    
-2. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、Raspbianのイメージファイル（サイズ大）を
-ノートPCにダウンロード・解凍する。
-  
+      
 ---
 
 ### 3. Raspbian OSイメージのmicroSDカードへの書き込み
 
 Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 
-以下のページを参考にし、Win32 Disk Imagerを用いてmicroSDカードにRaspbian OSイメージを書き込む。
-
+1. [Raspberry Pi財団の公式サイト](https://www.raspberrypi.org/downloads/raspbian/)から、Raspbianのイメージファイル（サイズ大）を
+ノートPCにダウンロード・解凍する。  
+2. 以下のページを参考にし、Win32 Disk Imagerを用いてmicroSDカードにRaspbian OSイメージを書き込む。  
 [第57回「改めましてラズベリーパイの基本！(2) Raspberry Pi イメージファイルのインストール＆バックアップ 2017年度版」](https://deviceplus.jp/hobby/raspberrypi_entry_057/)
 
 ---

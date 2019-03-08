@@ -50,6 +50,16 @@ hello.py
 print "Hello, world!"
 ```
 
+ここで、`hello.py`の1行目と2行目の部分
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+```
+は、pythonプログラムを動かすときの「おまじない」のような記述であるので、ここではこの記述について深く考える必要はない。
+従って、`hello.py`は、実質的に以下のたった1行からなるプログラムだと考えてよい。
+```
+print "Hello, world!"
+```
 
 
 ---

@@ -45,6 +45,13 @@ GPIOの配置や、現在の各ピンの状態などは、コマンドライン�
 
 ---
 
+[前の章へ](https://yu-workshop2019.github.io/chapter_2/chapter_2)
+
+
+[次の章へ](https://yu-workshop2019.github.io/chapter_4/chapter_4)
+
+
 [目次へ](https://yu-workshop2019.github.io/manual)
+
 
 [トップページへ](https://yu-workshop2019.github.io/)

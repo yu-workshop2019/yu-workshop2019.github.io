@@ -40,8 +40,13 @@ Pythonプログラムが意図したとおりに動かないときには、イ�
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py)  
 Pythonプログラムは、拡張子が`.py`で表される。メモ帳などのエディタで開いて編集することができる。
 
-`hello.py`は、3行の簡単なプログラムである。
+次の手順に従い、Raspberry Pi上で`hello.py`を実行する。  
+1. `hello.py`を`/home/pi`にコピーする。  
+2.ターミナルを立ち上げる。  
+3. `hello.py`を実行する。  
+`$python hello.py`  
 
+`hello.py`は、3行の簡単なプログラムである。
 hello.py
 ```
 #!/usr/bin/env python
@@ -60,7 +65,8 @@ print "Hello, world!"
 ```
 print "Hello, world!"
 ```
-
+これはPythonプログラムのもっとも単純なかたちと言える。文字列を画面に出力させたいときには、このように記述する。
+`""`の中の文字列を変更して実行すると、実行結果も変化することを確認してみよう。
 
 ---
 

@@ -257,6 +257,12 @@ Linuxコマンドは星の数ほどあり、そのすべてを解説すること
 ---
 
 
+[前の章へ](https://yu-workshop2019.github.io/chapter_1/chapter_1)
+
+
+[次の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)
+
+
 [目次へ](https://yu-workshop2019.github.io/manual)
 
 

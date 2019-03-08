@@ -45,7 +45,7 @@ Pythonプログラムは、拡張子が`.py`で表される。メモ帳などの
 
 hello.pyは、3行の簡単なプログラムである。
 
-`hello.py`
+hello.py
 ```
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-

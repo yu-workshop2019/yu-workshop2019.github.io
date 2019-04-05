@@ -33,6 +33,13 @@ Pythonでは、プログラム内での意味上の区切りを、インデン�
 これは、インデントによって誰でも自然に美しいプログラムが書けるようにという設計思想である。
 Pythonプログラムが意図したとおりに動かないときには、インデントが崩れている可能性も考えられる。
 
+---
+
+### 参考:WindowsでのPythonの実行
+
+Windows上でPythonプログラムを実行するには、実行環境を整える必要がある。
+WindowsでPythonの実行環境を整えるには、[anaconda](https://www.anaconda.com/distribution/)を用いるのが便利である。
+
 ### 3. Hello, world!
 
 まずは簡単なPythonプログラムを動かしてみよう。

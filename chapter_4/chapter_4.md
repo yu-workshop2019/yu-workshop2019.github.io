@@ -93,7 +93,7 @@ if.py
 # -*- coding: utf-8 -*-
 
 number = 1
-#number = 1
+#number = 2
 print("numberには" + str(number) + "が代入されています")
 
 if (number == 1):
@@ -101,6 +101,9 @@ if (number == 1):
 else:
     print("数字は1ではありません")
 ```
+
+`if.py`では、変数`number`に代入された数字が１であるかを判定し、その結果によって、出力する処理を分岐させている。
+具体的には、変数`number`に代入された数字が１であるならば、`数字は1です`と出力され、そうでないならば、`数字は1ではありません`と出力される。
 
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)

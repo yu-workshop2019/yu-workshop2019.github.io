@@ -157,6 +157,50 @@ if文内の記号`%`は、剰余を求める演算子である。この場合、
 
 ---
 
+### 7.ファイル出力
+
+プログラムで計算した結果などは、プログラムを終了させると失われてしまう。
+計算結果や測定結果などをテキストファイルに出力（保存）するためには以下のようにする。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output.py)  
+
+output.py
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+filename = "output.txt"
+
+text = 'あいうえお'
+
+with open(filename, mode='a') as f:
+    f.write(text)
+```
+
+`output.py`では、変数`text`に代入された文字列`あいうえお`を、変数`filename`に指定されたファイル名`output.txt`に出力している。  
+`output.py`を実行すると、`/home/pi/output.txt`という新しいファイルが生成されているはずである。適当なエディタで`output.txt`を開いて中身を見てみよう。
+
+以下のようにすると、複数行からなるテキストファイルを出力することもできる。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output_for.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output_for.py)  
+
+output_for.py
+```
+
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+filename = "output_for.txt"
+
+with open(filename, mode='a') as f:
+    for i in range(0, 100):
+        f.write(str(i) + "\n")
+```
+
+ここで、`\n`は改行することを表す。
+
+---
+
 ### 参考:Pythonの学習方法
 
 Python（に限らず多くのプログラミング言語）には数えきれないほどの文法や規則があり、そのすべてを短期間で理解し使いこなすことは容易ではない。

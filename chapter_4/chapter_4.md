@@ -134,6 +134,26 @@ for文内の`(0,100)`の数字を適当に変更して実行し、結果を確�
 
 ---
 
+### 6.if文とfor文の合わせ技
+
+if文とfor文を組み合わせると、以下のようなこともできる。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if_for.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if_for.py)  
+
+if_for.py
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+for i in range(1, 100):
+    if (i % 3 == 0):
+        print(str(i) + "は3の倍数です")
+```
+`if_for.py`は、1から99の数字の中で3の倍数であるものだけを表示するプログラムである。for文の中でif文を用いて、各数字が3の倍数であるかを判定している。  
+if文内の記号`%`は、剰余を求める演算子である。この場合、「変数`i`に代入されている数字を3で割った余りが0である」場合、すなわち、変数`i`が3の倍数である場合には、`3は3の倍数です`のように表示される。
+
+---
+
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)
 

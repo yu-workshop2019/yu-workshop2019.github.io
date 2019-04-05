@@ -30,6 +30,8 @@
 
 - [Raspberry Piで学ぶ ROSロボット入門](https://www.rt-shop.jp/index.php?main_page=product_info&products_id=3540)
 
+- [Scamperによる ROS & Raspberry Pi製作入門](https://www.ohmsha.co.jp/book/9784274507182/)
+
 ---
 
 ### Arduino関連の参考書籍

@@ -132,6 +132,9 @@ for i in range(0, 100):
 for文の繰り返しのことを「ループ」と呼ぶ。ループ内で変数`i`を表示させ、結果を確認している。
 for文内の`(0,100)`の数字を適当に変更して実行し、結果を確認しよう。
 
+また、1から100の数字の和を求めるプログラムを作ってみよう。解答例は以下。  
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/sum.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/sum.py)  
+
 ---
 
 ### 6.if文とfor文の合わせ技

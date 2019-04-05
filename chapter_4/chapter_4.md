@@ -80,13 +80,27 @@ print "Hello, world!"
 
 ---
 
-
 ### 4.if文
 
 プログラムの中で、ある条件に合致しているかどうかによって、処理を分岐させたいことがある。このような処理を「条件分岐」という。
 Pythonでこれを実現するには、if文を用いる方法がある。  
 Pythonでif文を用いた例をダウンロードする。  
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py)  
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if.py)  
+
+if.py
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+number = 1
+#number = 1
+print("numberには" + str(number) + "が代入されています")
+
+if (number == 1):
+    print("数字は1です")
+else:
+    print("数字は1ではありません")
+```
 
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)

@@ -111,6 +111,29 @@ Pythonには「コメントアウト」と呼ばれる機能があり、行頭�
 
 ---
 
+### 5.for文
+
+プログラムの中で、ある処理を何度も繰り返し実行させたいことがある。このような処理を「繰り返し」とか「反復」などという。
+ある処理を100回実行させたいときに、その処理を100回記述するのは非常に非効率である。
+Pythonで効率的にこれを実現するには、for文を用いる方法がある。  
+Pythonでfor文を用いた例をダウンロードする。  
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/for.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/for.py)  
+
+for.py
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+for i in range(0, 100):
+    print(str(i))
+```
+
+`for.py`は、for文を用いた簡単なプログラムである。for文の内部で、変数`i`には0から99(100-1)までの数字が1ずつ増加され、次々に代入されていく。
+for文の繰り返しのことを「ループ」と呼ぶ。ループ内で変数`i`を表示させ、結果を確認している。
+for文内の`(0,100)`の数字を適当に変更して実行し、結果を確認しよう。
+
+---
+
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)
 

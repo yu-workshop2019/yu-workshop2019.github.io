@@ -180,7 +180,7 @@ Googleが開発した入力メソッドであるmozc（モズク）を使用。
 `$sudo apt-get install fcitx-mozc`  
 2. 日本語フォントのインストール  
 これまたGoogleが提供している日本語向けフォントであるNotoフォントを使用。  
-`$ sudo apt-get install fonts-note`  
+`$ sudo apt-get install fonts-noto`  
 3. 半角/全角キーで入力切替ができるようになっているはず。  
 4. スタートメニューから適当なエディタを開いて確認する。  
 

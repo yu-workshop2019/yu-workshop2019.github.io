@@ -197,7 +197,7 @@ with open(filename, mode='a') as f:
         f.write(str(i) + "\n")
 ```
 
-ここで、`\n`は改行することを表す。
+ここで、`\n`は改行することを表す。`output_for.txt`を開いて中身を確認してみよう。
 
 ---
 

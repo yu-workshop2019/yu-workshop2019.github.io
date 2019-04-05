@@ -37,7 +37,7 @@ Pythonプログラムが意図したとおりに動かないときには、イ�
 
 ### 参考:WindowsでのPythonの実行
 
-Windows上でPythonプログラムを実行するには、実行環境を整える必要がある。
+Raspbianの場合と異なり、Windows上でPythonプログラムを実行するには、実行環境を整える必要がある。
 WindowsでPythonの実行環境を整えるには、[anaconda](https://www.anaconda.com/distribution/)を用いるのが便利である。
 
 ### 3. Hello, world!

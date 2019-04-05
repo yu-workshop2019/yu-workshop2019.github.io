@@ -40,6 +40,8 @@ Pythonプログラムが意図したとおりに動かないときには、イ�
 Raspbianの場合と異なり、Windows上でPythonプログラムを実行するには、実行環境を整える必要がある。
 WindowsでPythonの実行環境を整えるには、[anaconda](https://www.anaconda.com/distribution/)を用いるのが便利である。
 
+---
+
 ### 3. Hello, world!
 
 まずは簡単なPythonプログラムを動かしてみよう。
@@ -77,6 +79,15 @@ print "Hello, world!"
 `""`の中の文字列を変更して実行すると、実行結果も変化することを確認してみよう。
 
 ---
+
+
+### 4.if文
+
+プログラムの中で、ある条件に合致しているかどうかによって、処理を分岐させたいことがある。このような処理を「条件分岐」という。
+Pythonでこれを実現するには、if文を用いる方法がある。  
+Pythonでif文を用いた例をダウンロードする。  
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py)  
+
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)
 

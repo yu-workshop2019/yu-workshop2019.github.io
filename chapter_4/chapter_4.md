@@ -185,8 +185,6 @@ with open(filename, mode='a') as f:
 
 output_for.py
 ```
-
-```
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 

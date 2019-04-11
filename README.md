@@ -139,7 +139,7 @@
 
 - 参加を希望される方は、4月17日（水）17：50 に上記の場所までお越しください。
 
-- <u>[解説資料の第2章](https://yu-workshop2019.github.io/chapter_2/chapter_2)の2.ノートPCの準備と、3. Raspbian OSイメージのmicroSDカードへの書き込み の1.を（可能であれば）あらかじめやってきてください。</u>
+- [解説資料の第2章](https://yu-workshop2019.github.io/chapter_2/chapter_2)の2.ノートPCの準備と、3. Raspbian OSイメージのmicroSDカードへの書き込み の1.を<u>（可能であれば）あらかじめやってきてください。</u>
 
 - 不明な点や質問などがある方は、下記のEメールアドレスにてご連絡ください。
 

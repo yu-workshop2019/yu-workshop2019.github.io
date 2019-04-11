@@ -16,6 +16,7 @@
 
 ### [第4章 プログラミング言語Python(パイソン)を使う](/chapter_4/chapter_4)
 
+### [第5章 さまざまな電子部品の接続](/chapter_5/chapter_5)
 
 
 [トップページへ](https://yu-workshop2019.github.io/)

@@ -133,8 +133,8 @@ export ftp_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
 2. `/etc/apt/apt.conf`に以下を追記  
 ```
 Acquire::http::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
-Acquire::https::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
-Acquire::ftp::proxy "http://proxy.cc.yamaguchi-u.ac.jp:8080/";
+Acquire::https::proxy "https://proxy.cc.yamaguchi-u.ac.jp:8080/";
+Acquire::ftp::proxy "ftp://proxy.cc.yamaguchi-u.ac.jp:8080/";
 ```
 3. 保存してnanoを終了。  
 4． `$sudo reboot`

@@ -43,10 +43,10 @@ Raspberry Piでどんなことができるか、また、自分たちがやり�
 
 
 
-[前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_4)
+[前の章へ](https://yu-workshop2019.github.io/chapter_5/chapter_5)
 
 
-[次の章へ](https://yu-workshop2019.github.io/chapter_5/chapter_7)
+[次の章へ](https://yu-workshop2019.github.io/chapter_7/chapter_7)
 
 
 [目次へ](https://yu-workshop2019.github.io/manual)

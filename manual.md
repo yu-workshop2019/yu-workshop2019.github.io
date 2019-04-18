@@ -18,5 +18,7 @@
 
 ### [第5章 さまざまな電子部品の接続](/chapter_5/chapter_5)
 
+### [第6章 作品の製作](/chapter_6/chapter_6)
+
 
 [トップページへ](https://yu-workshop2019.github.io/)

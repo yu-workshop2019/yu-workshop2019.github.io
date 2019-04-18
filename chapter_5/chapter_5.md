@@ -71,7 +71,7 @@ WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)�
 ![BME280](http://akizukidenshi.com/img/goods/L/K-09421.jpg)
 
 1.BME280のはんだ付け
-BME280にピンヘッダをはんだ付けする。また、J3と書かれた部分の金属面にもはんだを盛る。
+BME280にピンヘッダをはんだ付けする。また、<u>J3と書かれた部分の金属面にもはんだを盛る。</u>
 BME280のデータシートは以下。  
 [http://akizukidenshi.com/download/ds/akizuki/AE-BME280_manu_v1.1.pdf](http://akizukidenshi.com/download/ds/akizuki/AE-BME280_manu_v1.1.pdf)
 
@@ -97,7 +97,8 @@ PythonでI2Cを使用するためのライブラリをインストールする�
 `$sudo apt-get install i2c-tools`  
 `$sudo apt-get python-smbus`  
 
-5.BME280が認識されているかの確認
+5.BME280が認識されているかの確認  
+
 ターミナルで以下のコマンドを実行。
 
 `$sudo i2cdetect -y 1`  
@@ -139,8 +140,82 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 
 ![C270](https://images-na.ssl-images-amazon.com/images/I/51hbFkBQtqL._SX355_.jpg)
 
+1.Raspberry PiとC270の接続
+
+Raspberry PiのUSBポートにC270を接続する。
+
+2.認識されたかの確認
+
+ターミナル上で以下のコマンドを実行。
+
+`$lsusb`
+
+Raspberry PiのUSBポートに接続されたデバイスの一覧が表示される。  
+C270が認識されていれば、`logitech USB Camera`などの表示が見つかるはず。
+
+3.OpenCVのインストール
+
+Pythonなどから画像を取り扱うためのライブラリであるOpenCVをインストールする。  
+ターミナル上で以下のコマンドを実行。
+
+`$sudo apt-get install python-opencv`  
+
+このコマンドの実行が完了するにはしばらく時間がかかることがある。
+
+4.USBカメラから画像を取得するPythonプログラムのダウンロード
+
+以下のサイトから、USBカメラから画像を取得するPythonプログラムをダウンロードし、`/home/pi`にコピーする。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/get_image.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/get_image.py)
+
+5.実行権限の追加
+
+`$cd`  
+`$sudo chmod +x ./get_image.py`  
+
+
+6.サンプルプログラムの実行
+
+ターミナル上で以下のコマンドを実行。`/home/pi`以下に画像ファイルが保存されているはず。
+
+`$python /home/pi/get_image.py`
+
+7.ストリーム（映像）の取得
+
+同様にして、USBカメラからストリーム（映像）を取得し、画面上に表示してみる。
+
+以下のサイトから、USBカメラからストリームを取得・表示するPythonプログラムをダウンロードし、`/home/pi`にコピーする。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py)
+
+8.実行権限の追加と実行
+
+`$cd`  
+`$sudo chmod +x ./stream.py`  
+`$python /home/pi/stream.py`
+
+USBカメラから取得した映像が表示されたウィンドウが画面上に現れる。
+
+OpenCVを用いると、取得したこれらの画像・映像に加工を加えたりすることもできる。
 
 ---
+
+
+### 6.USBカメラ C270とmjpg-streamerでライブカメラ
+
+![C270](https://images-na.ssl-images-amazon.com/images/I/51hbFkBQtqL._SX355_.jpg)
+
+1.Raspberry PiとC270の接続
+
+Raspberry PiのUSBポートにC270を接続する。
+
+2.認識されたかの確認
+
+ターミナル上で以下のコマンドを実行。
+
+`$lsusb`
+
+Raspberry PiのUSBポートに接続されたデバイスの一覧が表示される。  
+C270が認識されていれば、`logitech USB Camera`などの表示が見つかるはず。
+
 
 ### 6.for文
 

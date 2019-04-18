@@ -49,7 +49,14 @@
 
 4. プログラムの実行
 
-'$sudo python ./lchika.py'
+WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)で実行する。
+`$sudo python ./lchika.py`  
+
+5. プログラムの改良
+
+点滅速度や点滅の割合を変更するとどうなるか確認してみよう。
+また、LEDのON/OFFだけでなく、明るさを変更するにはどうすればよいか考え、実験してみよう。
+（ヒント:PWM）
 
 ---
 

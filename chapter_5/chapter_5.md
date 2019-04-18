@@ -71,7 +71,9 @@ WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)�
 ![BME280](http://akizukidenshi.com/img/goods/L/K-09421.jpg)
 
 1.BME280のはんだ付け
-BME280にピンヘッダをはんだ付けする。
+BME280にピンヘッダをはんだ付けする。また、J3と書かれた部分の金属面にもはんだを盛る。
+BME280のデータシートは以下。  
+[http://akizukidenshi.com/download/ds/akizuki/AE-BME280_manu_v1.1.pdf](http://akizukidenshi.com/download/ds/akizuki/AE-BME280_manu_v1.1.pdf)
 
 2.BME280とRaspberry Piの配線
 ジャンプワイヤを用いて、以下のようにRaspberry PiとBME280を接続する。配線を間違えないよう注意。
@@ -128,72 +130,15 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 
 ### 4. サーボモータ SG-90
 
-まずは簡単なPythonプログラムを動かしてみよう。
-以下のサイトから、最も基本的なPythonのプログラムをダウンロードする。  
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/hello.py)  
-Pythonプログラムは、拡張子が`.py`で表される。メモ帳などのエディタで開いて編集することができる。
-
-次の手順に従い、Raspberry Pi上で`hello.py`を実行する。  
-1. `hello.py`を`/home/pi`にコピーする。  
-2. ターミナルを立ち上げる。  
-3. `hello.py`を実行する。  
-`$python hello.py`  
-
-`hello.py`は、3行の簡単なプログラムである。  
-
-hello.py
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-print "Hello, world!"
-```
-
-ここで、`hello.py`の1行目と2行目の部分
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-```
-は、pythonプログラムを動かすときの「おまじない」のような記述であるので、ここではこの記述について深く考える必要はない。
-従って、`hello.py`は、実質的に以下のたった1行からなるプログラムだと考えてよい。
-```
-print "Hello, world!"
-```
-これはPythonプログラムのもっとも単純なかたちと言える。文字列を画面に出力させたいときには、このように記述する。
-`""`の中の文字列を変更して実行すると、実行結果も変化することを確認してみよう。
+![SG-90](http://akizukidenshi.com/img/goods/C/M-08761.jpg)
 
 ---
 
-### 5.USBカメラ C270
+
+### 5.USBカメラ C270で画像を取得
 
 ![C270](https://images-na.ssl-images-amazon.com/images/I/51hbFkBQtqL._SX355_.jpg)
 
-プログラムの中で、ある条件に合致しているかどうかによって、処理を分岐させたいことがある。このような処理を「条件分岐」という。
-Pythonでこれを実現するには、if文を用いる方法がある。  
-Pythonでif文を用いた例をダウンロードする。  
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if.py)  
-
-if.py
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-number = 1
-#number = 2
-print("numberには" + str(number) + "が代入されています")
-
-if (number == 1):
-    print("数字は1です")
-else:
-    print("数字は1ではありません")
-```
-
-`if.py`では、変数`number`に代入された数字が１であるかを判定し、その結果によって、出力する処理を分岐させている。
-具体的には、変数`number`に代入された数字が１であるならば、`数字は1です`と出力され、そうでないならば、`数字は1ではありません`と出力される。  
-Pythonには「コメントアウト」と呼ばれる機能があり、行頭に`#`が付された行は実行されない（無視される）。
-したがって、`if.py`の5行目にある`number=2`は無視されている。
-ここで、5行目の`number=2`のコメントアウトを外す(`#`を取り去る)と、この行の記述が有効になり、変数`number`には2が代入される。  
-`number=1`と`number=2`の各場合について、実行結果を確認し、違いを見つけよう。
 
 ---
 

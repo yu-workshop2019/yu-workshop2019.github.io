@@ -37,6 +37,20 @@
 `$ sudo python setup.py install`  
 `$sudo python3 setup.py install`  
 
+2. LEDを点滅させるためのPythonプログラムをダウンロード
+
+以下のページから、LEDを点滅させるためのPythonプログラムをダウンロードし、/home/piにコピーする。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py)
+
+3. 実行権限の追加
+
+`$cd`  
+`$sudo chmod +x ./lchika.py`  
+
+4. プログラムの実行
+
+'$sudo python ./lchika.py'
+
 ---
 
 ### 3.温度・湿度・気圧センサ BME280

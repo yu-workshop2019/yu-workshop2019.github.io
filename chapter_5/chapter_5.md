@@ -191,7 +191,7 @@ Pythonなどから画像を取り扱うためのライブラリであるOpenCV�
 
 `$cd`  
 `$sudo chmod +x ./stream.py`  
-`$python /home/pi/stream.py`
+`$python ./stream.py`
 
 USBカメラから取得した映像が表示されたウィンドウが画面上に現れる。
 

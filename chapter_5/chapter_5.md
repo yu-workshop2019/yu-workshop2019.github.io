@@ -21,6 +21,8 @@
 第3章では、Raspberry PiにLEDを接続して点灯/消灯を制御した。これをプログラムによって制御したい。
 [第3章](https://yu-workshop2019.github.io/chapter_3/chapter_3)で作ったLEDの回路を用いる。
 
+![LED](http://akizukidenshi.com/img/goods/L/I-11656.jpg)
+
 1.WiringPi-Pythonのインストール  
 ターミナル上で以下のコマンドを実行し、PythonでRaspberry PiのGPIOを制御するためのライブラリを導入する。
 （大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、コピペすることを推奨）

@@ -184,7 +184,7 @@ Pythonなどから画像を取り扱うためのライブラリであるOpenCV�
 
 同様にして、USBカメラからストリーム（映像）を取得し、画面上に表示してみる。
 
-以下のサイトから、USBカメラからストリームを取得・表示するPythonプログラムをダウンロードし、`/home/pi`にコピーする。
+以下のサイトから、USBカメラからストリームを取得・表示するPythonプログラムをダウンロードし、`/home/pi`にコピーする。  
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py)
 
 8.実行権限の追加と実行

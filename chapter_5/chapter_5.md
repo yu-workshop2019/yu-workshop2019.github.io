@@ -123,6 +123,7 @@ SWITCH SCIENCE という会社が公開してくれている、BME280から気�
 `$sudo python /home/pi/bme280_sample.py`
 
 9.連続的な値の取得とファイルへの出力
+
 BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書き込むように変更する。  
 以下のサイトからプログラムをダウンロードし、`/home/pi`にコピーする。
 

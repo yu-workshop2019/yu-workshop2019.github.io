@@ -166,6 +166,8 @@ print "Hello, world!"
 
 ### 5.USBカメラ C270
 
+![C270](https://images-na.ssl-images-amazon.com/images/I/51hbFkBQtqL._SX355_.jpg)
+
 プログラムの中で、ある条件に合致しているかどうかによって、処理を分岐させたいことがある。このような処理を「条件分岐」という。
 Pythonでこれを実現するには、if文を用いる方法がある。  
 Pythonでif文を用いた例をダウンロードする。  

@@ -19,6 +19,24 @@
 
 第3章では、Raspberry PiにLEDを接続して点灯/消灯を制御した。これをプログラムによって制御したい。
 
+1. WiringPi-Pythonのインストール  
+ターミナル上で以下のコマンドを実行し、PythonでRaspberry PiのGPIOを制御するためのライブラリを導入する。
+（大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、コピペすることを推奨）
+
+`$sudo apt-get update`  
+`$sudo apt-get install git`  
+`$git config --global http.proxy http://proxy.cc.yamaguchi-u.ac.jp:8080`  
+`$git config --global https.proxy http://proxy.cc.yamaguchi-u.ac.jp:8080`  
+`$sudo rm -rf WiringPi-Python`  
+`$sudo apt-get install python-dev python-setuptools swig`  
+`$git clone --recursive https://github.com/WiringPi/WiringPi-Python.git`  
+`$cd WiringPi-Python/WiringPi`  
+`$sudo ./build`  
+`$cd ..`  
+`$swig -python wiringpi.i`  
+`$ sudo python setup.py install`  
+`$sudo python3 setup.py install`  
+
 ---
 
 ### 3.温度・湿度・気圧センサ BME280

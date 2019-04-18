@@ -122,10 +122,25 @@ SWITCH SCIENCE という会社が公開してくれている、BME280から気�
 
 `$sudo python /home/pi/bme280_sample.py`
 
+センサ部分に息を吹きかけたりすると気温や湿度が変化するのがわかる。
+
 9.連続的な値の取得とファイルへの出力
 
 BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書き込むように変更する。  
-以下のサイトからプログラムをダウンロードし、`/home/pi`にコピーする。
+以下のサイトからプログラムをダウンロードし、`/home/pi`にコピーする。  
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/bme280.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/bme280.py)
+
+10.実行権限の追加と実行
+
+`$cd`  
+`$sudo chmod +x ./bme280.py`  
+`$sudo python ./bme280.py`
+
+停止するときにはターミナル上で`Ctrl+C`を押す。
+
+`/home/pi`に、ファイル名に日付を含み、拡張子が`.csv`であるファイルができているはず。
+これをExcelなどで開いてみよう。1秒ごとの温度・湿度・気圧が記録されている。
+グラフなどを作成してみると、一日の気温・湿度・気圧の変化が視覚的に確認しやすい。
 
 ---
 

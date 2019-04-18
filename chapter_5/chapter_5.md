@@ -25,7 +25,7 @@
 
 1.WiringPi-Pythonのインストール  
 ターミナル上で以下のコマンドを実行し、PythonでRaspberry PiのGPIOを制御するためのライブラリを導入する。
-（大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、コピペすることを推奨）
+（大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、ターミナルにコピペすることを推奨）
 
 `$sudo apt-get update`  
 `$sudo apt-get install git`  
@@ -216,101 +216,71 @@ Raspberry PiのUSBポートにC270を接続する。
 Raspberry PiのUSBポートに接続されたデバイスの一覧が表示される。  
 C270が認識されていれば、`logitech USB Camera`などの表示が見つかるはず。
 
+3.mjpg-streamerのインストール
 
-### 6.for文
+Raspberry Piでライブカメラを実現するためのソフトである、mjpg-streamerをインストールする。  
+（大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、ターミナルにコピペすることを推奨）
 
-プログラムの中で、ある処理を何度も繰り返し実行させたいことがある。このような処理を「繰り返し」とか「反復」などという。
-ある処理を100回実行させたいときに、その処理を100回記述するのは非常に非効率である。
-Pythonで効率的にこれを実現するには、for文を用いる方法がある。  
-Pythonでfor文を用いた例をダウンロードする。  
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/for.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/for.py)  
+`$sudo rm -rf /opt/mjpg-streamer`  
+`$rm -rf mjpg-streamer`  
+`$sudo apt-get update`  
+`$sudo apt-get install git`  
+`$git config --global http.proxy http://proxy.cc.yamaguchi-u.ac.jp:8080`  
+`$git config --global https.proxy http://proxy.cc.yamaguchi-u.ac.jp:8080`  
+`$sudo apt-get install libjpeg8-dev cmake`  
+`$ git clone https://github.com/jacksonliam/mjpg-streamer.git`  
+`$cd mjpg-streamer/mjpg-streamer-experimental`  
+`$make`  
+`$cd`  
+`$sudo mv mjpg-streamer/mjpg-streamer-experimental /opt/mjpg-streamer` 
 
-for.py
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+4.mjpg-streamer起動用スクリプトのダウンロード・配置
 
-for i in range(0, 100):
-    print(str(i))
-```
+mjpg-streamerを起動させるためのシェルスクリプトを以下のページからダウンロードし、`/home/pi`にコピーする。
 
-`for.py`は、for文を用いた簡単なプログラムである。for文の内部で、変数`i`には0から99(100-1)までの数字が1ずつ増加され、次々に代入されていく。
-for文の繰り返しのことを「ループ」と呼ぶ。ループ内で変数`i`を表示させ、結果を確認している。
-for文内の`(0,100)`の数字を適当に変更して実行し、結果を確認しよう。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/mjpg-streamer_start.sh](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/mjpg-streamer_start.sh)
 
-また、1から100の数字の和を求めるプログラムを作ってみよう。解答例は以下。  
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/sum.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/sum.py)  
+5.Raspberry Piとルータの接続
 
----
+Raspberry Piをyu-netなどから切り離す。 
+LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberry PiのLANポート部分にある緑色およびオレンジ色のLEDがついていることを確認する。
 
-### 7.if文とfor文の合わせ技
+6.Raspberry PiのIPアドレスの確認
 
-if文とfor文を組み合わせると、以下のようなこともできる。
+ターミナル上で以下のコマンドを実行。
 
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if_for.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/if_for.py)  
+`$ip a | grep eth0`
 
-if_for.py
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+記号`|`は、`Shift+\`で入力できる。
 
-for i in range(1, 100):
-    if (i % 3 == 0):
-        print(str(i) + "は3の倍数です")
-```
-`if_for.py`は、1から99の数字の中で3の倍数であるものだけを表示するプログラムである。for文の中でif文を用いて、各数字が3の倍数であるかを判定している。  
-if文内の記号`%`は、剰余を求める演算子である。この場合、「変数`i`に代入されている数字を3で割った余りが0である」場合、すなわち、変数`i`が3の倍数である場合には、`3は3の倍数です`のように表示される。
+`inet 192.168.0.5/24`などの表示が出るはず。この数字（IPアドレス）は、例えば`192.168.0.10`のように、多少異なってもよい。この番号（IPアドレス）を覚えておく。
 
----
+7.実行権限の追加と実行
 
-### 8.ファイル出力
+ターミナル上で以下のコマンドを実行。mjpg-streamerが起動する。
 
-プログラムで計算した結果などは、プログラムを終了させると失われてしまう。
-計算結果や測定結果などをテキストファイルに出力（保存）するためには以下のようにする。
+`$cd`  
+`$sudo chmod +x ./mjpg-streamer_start.sh`  
+`$./mjpg-streamer_start.sh`  
 
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output.py)  
+8.PCやスマホをネットワークに接続
 
-output.py
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+Raspberry Piを接続したルータに、手持ちのPCやスマホを接続する。有線/無線どちらでもよい。
 
-filename = "output.txt"
+9.PCやスマホからのライブ映像視聴
 
-text = 'あいうえお'
+PCやスマホのブラウザから、6.で調べた番号（IPアドレス）の9000番ポートにアクセスする。  
+例えば、番号が`192.168.0.5`であった場合、ブラウザのURL入力欄に以下のように入力する。
 
-with open(filename, mode='a') as f:
-    f.write(text)
-```
+`http://192.168.0.5:9000/`
 
-`output.py`では、変数`text`に代入された文字列`あいうえお`を、変数`filename`に指定されたファイル名`output.txt`に出力している。  
-`output.py`を実行すると、`/home/pi/output.txt`という新しいファイルが生成されているはずである。適当なエディタで`output.txt`を開いて中身を見てみよう。
+mjpg-streamerからのストリーミング映像がブラウザに表示される。
 
-以下のようにすると、複数行からなるテキストファイルを出力することもできる。
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output_for.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/output_for.py)  
 
-output_for.py
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-filename = "output_for.txt"
 
-with open(filename, mode='a') as f:
-    for i in range(0, 100):
-        f.write(str(i) + "\n")
-```
 
-ここで、`\n`は改行することを表す。`output_for.txt`を開いて中身を確認してみよう。
 
----
-
-### 参考:Pythonの学習方法
-
-Python（に限らず多くのプログラミング言語）には数えきれないほどの文法や規則があり、そのすべてを短期間で理解し使いこなすことは容易ではない。
-Pythonを徐々に習得するには、実現したいことや疑問に思うことが出るたびに、面倒くさがらずこまめに他人に質問したり、Webで検索したり、Python関連の書籍を読んだりして解決することが重要である。  
-また、Pythonは非常に人気の言語であるため、Web上で多くの人が様々な応用例を公開している。自分がやりたいことと似たサンプルプログラムを発見したら、それをまねて、あるいはそれをベースにしてアレンジを加えるというのも効率的な手法である。  
-Pythonには、例として画像の取り扱いやWebのスクレイピングなど、特定の分野のプログラミングをより効率的にするために、よく使うであろう機能をあらかじめまとめた「ライブラリ」と呼ばれる仕組みがある。ライブラリを用いると、自分でゼロからプログラミングするよりも、ずっと効率的に目的を達成することができる。既存のライブラリは先人の努力の賜物であるので、最大限活用させてもらおう（車輪の再発明を防ぐ）。
 
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)

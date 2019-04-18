@@ -66,6 +66,8 @@ WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)�
 
 温度・湿度・気圧を1台で測定できるセンサ、BME280を用いて、Raspberry Piをデジタル百葉箱にしてみよう。
 
+![BME280](http://akizukidenshi.com/img/goods/L/K-09421.jpg)
+
 1.BME280のはんだ付け
 BME280にピンヘッダをはんだ付けする。
 

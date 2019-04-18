@@ -12,6 +12,7 @@
 ### 1. Raspberry Piに様々な電子部品を接続する
 第3章では、Raspberry PiにLEDを接続して点灯/消灯を制御した。この他にも、モータ・センサなどのような様々な電子部品をRaspberry Piに接続して制御すると、ソフトウェアだけでは実現できない様々なデバイスを製作することが可能になる。  
 本章では、さまざまな電子部品とその使用例を簡潔に紹介し、自分が実現したいデバイスを製作するためのヒントとなることを目的とする。
+以下の項目の中で興味をひかれたものを試してみよう。
 
 ---
 
@@ -20,7 +21,7 @@
 第3章では、Raspberry PiにLEDを接続して点灯/消灯を制御した。これをプログラムによって制御したい。
 [第3章](https://yu-workshop2019.github.io/chapter_3/chapter_3)で作ったLEDの回路を用いる。
 
-1. WiringPi-Pythonのインストール  
+1.WiringPi-Pythonのインストール  
 ターミナル上で以下のコマンドを実行し、PythonでRaspberry PiのGPIOを制御するためのライブラリを導入する。
 （大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、コピペすることを推奨）
 
@@ -38,33 +39,85 @@
 `$ sudo python setup.py install`  
 `$sudo python3 setup.py install`  
 
-2. LEDを点滅させるためのPythonプログラムをダウンロード
+2.LEDを点滅させるためのPythonプログラムをダウンロード
 
-以下のページから、LEDを点滅させるためのPythonプログラムをダウンロードし、/home/piにコピーする。
+以下のページから、LEDを点滅させるためのPythonプログラムをダウンロードし、`/home/pi`にコピーする。
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py)
 
-3. 実行権限の追加
+3.実行権限の追加
 
 `$cd`  
 `$sudo chmod +x ./lchika.py`  
 
-4. プログラムの実行
+4.プログラムの実行
 
 WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)で実行する。  
 
 `$sudo python ./lchika.py`  
 
-5. プログラムの改良
+5.プログラムの改良
 
 点滅速度や点滅の割合を変更するとどうなるか確認してみよう。
 また、LEDのON/OFFだけでなく、明るさを変更するにはどうすればよいか考え、実験してみよう。
-（ヒント:PWM）
 
 ---
 
 ### 3.温度・湿度・気圧センサ BME280
 
-Raspberry PiはPythonとの相性が良く、Raspbianには標準でPythonの実行環境が用意されている。
+温度・湿度・気圧を1台で測定できるセンサ、BME280を用いて、Raspberry Piをデジタル百葉箱にしてみよう。
+
+1.BME280のはんだ付け
+BME280にピンヘッダをはんだ付けする。
+
+2.BME280とRaspberry Piの配線
+ジャンプワイヤを用いて、以下のようにRaspberry PiとBME280を接続する。配線を間違えないよう注意。
+Raspberry Piのピン配置については以下のサイトのいずれかを参照。  
+
+[RaspberryPi2のPin配置](http://www.ic.daito.ac.jp/~mizutani/raspi/raspi_pins.html)  
+[ツール・ラボ 第22回 Raspberry PiのGPIO概要](https://tool-lab.com/make/raspberrypi-startup-22)  
+[ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)  
+
+
+3.Raspberry PiでI2Cの使用を許可
+BME280は、I2C（アイツーシ－）と呼ばれる通信規格でデータをRaspberry Piに送信する。
+Raspberry PiでI2Cが使用できるように設定を変更する。
+raspi-configの"Advanced Option"にある。
+
+`$sudo raspi-config`
+
+4.I2C用のライブラリをインストール
+PythonでI2Cを使用するためのライブラリをインストールする。ターミナルで以下のコマンドを実行。
+
+`$sudo apt-get install i2c-tools`  
+`$sudo apt-get python-smbus`  
+
+5.BME280が認識されているかの確認
+ターミナルで以下のコマンドを実行。
+
+`$sudo i2cdetect -y 1`  
+
+BME280が正しく接続され、Raspberry Piから認識されているならば、"76"などの数字が表示される。
+そうでない場合には、もう一度配線を確認してみる。
+
+6.サンプルプログラムの入手
+SWITCH SCIENCE という会社が公開してくれている、BME280から気温・湿度・気圧を取得して表示するプログラムを以下のページからダウンロードし、`/home/pi`にコピーする。  
+[https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py](https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py)  
+
+7.実行権限の追加
+
+`$cd`  
+`$sudo chmod +x ./bme280_sample.py`  
+
+
+8.サンプルプログラムの実行
+
+ターミナル上で以下のコマンドを実行。気温・湿度・気圧が表示されるはず。
+
+`$sudo python /home/pi/bme280_sample.py`
+
+9.連続的な値の取得とファイルへの出力
+BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書き込むように変更する。  
+以下のサイトからプログラムをダウンロードし、`/home/pi`にコピーする。
 
 ---
 

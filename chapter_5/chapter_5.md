@@ -300,6 +300,40 @@ mjpg-streamerからのストリーミング映像がブラウザに表示され�
 
 ### 7.WebIOPiで、Raspberry Piに接続された電子部品をPCやスマホから制御
 
+ブラウザ上からRaspberry PiのGPIOを制御できるライブラリであるWebIOPiを用いて、ネットワーク経由のGPIO制御を実現する。
+
+1.wgetのプロキシ回避
+
+`/etc/environment`を編集
+
+`$sudo nano /etc/environment`
+
+`/etc/environment`末尾に以下の3行を追記
+
+```
+https_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+http_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+```
+
+2.WebIOPiのダウンロード
+
+以下のサイトから、WebIOPiをダウンロードし、`/home/pi`にコピーする。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz)
+
+3.ファイルの解凍・インストール・修正パッチ適用
+
+ターミナル上で以下のコマンドを順に実行。
+
+`$tar zxf WebIOPi-0.7.1.tar.gz`  
+`$cd WebIOPi-0.7.1/`  
+`$wget https://raw.githubusercontent.com/neuralassembly/raspi2/master/webiopi-pi2bplus.patch`  
+`$patch -p1 -i webiopi-pi2bplus.patch`  
+`$sudo ./setup.sh`  
+
+最後に、`Do you want to access WebIOPi over Internet ? [y/n]`という表示が出たら、キーボードで`n`を入力したあとEnter。
+
 ---
 
 ### 8. リレーを用いて電気製品のON/OFFを制御

@@ -119,9 +119,9 @@ Raspberry Piでは、microSDカードにOSを書き込んで使用する。
 `$sudo nano ~/.bashrc`  
 2. `~/.bashrc`末尾に以下を追記  
 ```
-export http_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
-export https_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
-export ftp_proxy=http://procy.cc.yamaguchi-u.ac.jp:8080/
+export http_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+export https_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+export ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 ```
 3. 保存してnanoを終了。  
 4． `$sudo reboot`

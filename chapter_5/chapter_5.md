@@ -339,6 +339,46 @@ ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 
 `$wget https://raw.githubusercontent.com/neuralassembly/raspi/master/webiopi.service`  
 `$sudo mv webiopi.service /etc/systemd/system/`  
+
+4.HTMLファイルおよびPythonファイルのダウンロード・配置
+
+以下のサイトより、フォルダ`webiopi_source`をフォルダごとダウンロードし、`/home/pi`にコピーする。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/](https://github.com/yu-workshop2019/yu-workshop2019_docs/)
+
+5.WebIOPiのconfigファイルの書き換え
+
+WebIOPiのconfigファイルを書き換える。
+
+`$sudo nano /etc/webiopi/config`
+
+`[SCRIPTS]`の欄の、`#myscript = /home/pi/webiopi/examples/scripts/macros/script.py`と書かれている行の下に以下のように追記する。
+
+`myscript = /home/pi/webiopi_source/python/script.py`
+
+`[HTML]`の欄の、`#doc-root = /home/pi/webiopi/examples/scripts/macros`と書かれている行の下に以下のように追記する。
+
+`doc-root = /home/pi/webiopi_source/html`
+
+保存してnanoを終了。
+
+6.WebIOPiの起動・終了
+
+WebIOPiの起動
+
+`$sudo service webiopi start`
+
+WebIOPiの終了
+
+`$sudo service webiopi stop`
+
+``
+
+
+
+
+
+
  
 ---
 

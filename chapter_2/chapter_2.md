@@ -174,8 +174,8 @@ Acquire::ftp::proxy "ftp://proxy.cc.yamaguchi-u.ac.jp:8080/";
 
 0.（接続されていない場合は、）Raspberry Piを有線または無線でyunetに接続（画面右上のアイコンで確認）  
 1.時刻合わせ  
-2.ブラウザで`http://ic.cc.yamaguchi-u.ac.jp`にアクセス
-3.ユーザ名とパスワードを入力し、学内ネットの認証    
+2.ブラウザで`http://ic.cc.yamaguchi-u.ac.jp`にアクセス  
+3.ユーザ名とパスワードを入力し、学内ネットの認証  
 
 ---
 

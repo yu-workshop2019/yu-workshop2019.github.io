@@ -42,6 +42,21 @@ WindowsでPythonの実行環境を整えるには、[anaconda](https://www.anaco
 
 ---
 
+### 参考:エディタgedit
+
+Raspberry Pi上でプログラムを編集するには、geditと呼ばれるエディタが便利である。
+
+geditのインストール
+
+`$sudo apt-get install gedit`
+
+hogehoge.pyをgeditで開く
+
+`$gedit /home/pi/hogehoge.py`
+
+---
+
+
 ### 3. Hello, world!
 
 まずは簡単なPythonプログラムを動かしてみよう。

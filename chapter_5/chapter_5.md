@@ -304,6 +304,8 @@ mjpg-streamerからのストリーミング映像がブラウザに表示され�
 
 ### 8. リレーを用いて電気製品のON/OFFを制御
 
+![relay](http://akizukidenshi.com/img/goods/C/K-06009.jpg)
+
 リレー（継電器）を用いると、Raspberry Piのわずかな電圧（3.3Vや5V）で商用電源（100VAC。一般家庭のコンセントから流れる電気）のON/OFFを制御することができる。
 
 ※※※※※ 注意：コンセントから流れる100VACは大変危険で、関電の恐れがある。気を付けて行うこと！！！  ※※※※※
@@ -321,10 +323,12 @@ mjpg-streamerからのストリーミング映像がブラウザに表示され�
 2.Raspberry Piへの配線
 リレーの制御用端子（3）本を以下のようにRaspberry PiのGPIOと配線する。  配線に間違いがないかよく確認する。
 
+```
     Relay   |  GPIO  
      VCC    |   5V  
 CTRL or SIG | GPIO26  
      GND    |  GND  
+```
      
 リレーは、制御端子（CTRL or SIG）に電流が流れるとスイッチがONとなり、そうでないとOFFとなる。
 Raspberry PiのGPIOをON/OFFすることで、接続したリレーのON/OFFができる。

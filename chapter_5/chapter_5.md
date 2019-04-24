@@ -322,6 +322,9 @@ ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz)
 
+うまくいかない場合はこちら。  
+[http://webiopi.trouch.com/DOWNLOADS.html](http://webiopi.trouch.com/DOWNLOADS.html)
+
 3.ファイルの解凍・インストール・修正パッチ適用
 
 ターミナル上で以下のコマンドを順に実行。

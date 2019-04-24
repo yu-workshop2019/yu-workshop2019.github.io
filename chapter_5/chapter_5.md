@@ -325,6 +325,7 @@ mjpg-streamerからのストリーミング映像がブラウザに表示され�
 
 ```
     Relay   |  GPIO  
+---------------------------
      VCC    |   5V  
 CTRL or SIG | GPIO26  
      GND    |  GND  

@@ -332,8 +332,11 @@ ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 `$patch -p1 -i webiopi-pi2bplus.patch`  
 `$sudo ./setup.sh`  
 
-最後に、`Do you want to access WebIOPi over Internet ? [y/n]`という表示が出たら、キーボードで`n`を入力したあとEnter。
+`Do you want to access WebIOPi over Internet ? [y/n]`という表示が出たら、キーボードで`n`を入力したあとEnter。
 
+`$wget https://raw.githubusercontent.com/neuralassembly/raspi/master/webiopi.service`  
+`$sudo mv webiopi.service /etc/systemd/system/`  
+ 
 ---
 
 ### 8. リレーを用いて電気製品のON/OFFを制御

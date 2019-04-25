@@ -294,39 +294,27 @@ Pythonなどから画像を取り扱うためのライブラリであるOpenCV�
 
 このコマンドの実行が完了するにはしばらく時間がかかることがある。
 
-4.USBカメラから画像を取得するPythonプログラムのダウンロード
+4.USBカメラのストリームを取得するPythonプログラムのダウンロード
 
-以下のサイトから、USBカメラから画像を取得するPythonプログラムをダウンロードし、`/home/pi`にコピーする。
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/get_image.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/get_image.py)
+以下のサイトから、USBカメラのストリームを取得するPythonプログラムをダウンロードし、`/home/pi`にコピーする。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py)
 
 5.実行権限の追加
 
 `$cd`  
-`$sudo chmod +x ./get_image.py`  
+`$sudo chmod +x ./stream.py`  
 
 
 6.サンプルプログラムの実行
 
-ターミナル上で以下のコマンドを実行。`/home/pi`以下に画像ファイルが保存されているはず。
+ターミナル上で以下のコマンドを実行。
 
-`$python /home/pi/get_image.py`
-
-7.ストリーム（映像）の取得
-
-同様にして、USBカメラからストリーム（映像）を取得し、画面上に表示してみる。
-
-以下のサイトから、USBカメラからストリームを取得・表示するPythonプログラムをダウンロードし、`/home/pi`にコピーする。  
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py)
-
-8.実行権限の追加と実行
-
-`$cd`  
-`$sudo chmod +x ./stream.py`  
 `$python ./stream.py`
 
 USBカメラから取得した映像が表示されたウィンドウが画面上に現れる。
 
 OpenCVを用いると、取得したこれらの画像・映像に加工を加えたりすることもできる。
+この例では取得したストリームに対して輪郭抽出した画像も表示している。
 
 ---
 
@@ -407,8 +395,6 @@ PCやスマホのブラウザから、6.で調べた番号（IPアドレス）�
 `http://192.168.0.5:9000/`
 
 mjpg-streamerからのストリーミング映像がブラウザに表示される。
-
-8.mjpg-streamerのストリームをOpenCVで処理
 
 ---
 

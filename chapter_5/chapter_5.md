@@ -577,6 +577,52 @@ Raspberry PiのGPIOをON/OFFすることで、接続したリレーのON/OFFが�
 
 ### 10. JTalkで音声合成し、Raspberry Piを初音ミクの声で喋らせる
 
+音声合成ソフトをインストールし、Raspberry Piを喋らせてみよう。
+
+1.Open-Jtalkのインストール
+
+ターミナルで以下のコマンドを実行。。
+
+`$ sudo apt-get install open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001`
+
+2.サンプルコードのダウンロード
+
+以下のサイトより、フォルダ`talk`をフォルダごとダウンロードし、`/home/pi`にコピーする。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/](https://github.com/yu-workshop2019/yu-workshop2019_docs/)
+
+3.音響モデルの配置
+
+ターミナルで以下のコマンドを実行。
+
+`$cd ./talk`  
+`$sudo mkdir /usr/share/hts-voice/miku`  
+`$sudo cp Voice.htsvoice /usr/share/hts-voice/miku/miku.htsvoice`  
+
+4.セリフの設定
+
+`/home/pi/talk/serif.txt`を適当なエディタで開いて、しゃべらせたいセリフを書き込む（日本語化）。
+
+5.スピーカの接続
+
+Raspberry Piの3.5mmジャックにスピーカを接続する。
+
+6.サンプルプログラムの実行
+
+ターミナルで以下のコマンドを実行。
+
+`$cd ./talk`  
+`$python ./talk.py`
+
+`/home/pi/talk/serif.txt`の内容を書き換えて再び実行するとどうなるか確認してみよう。
+
+音が出ないときは音量や出力先を確認する。以下のコマンドを実行。
+
+`$alsamixer`
+
+
+
+
 ---
 
 

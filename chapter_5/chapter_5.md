@@ -41,8 +41,7 @@
 `$ sudo python setup.py install`  
 `$sudo python3 setup.py install`  
 
-2.LEDを点滅させるためのPythonプログラムをダウンロード
-
+2.LEDを点滅させるためのPythonプログラムをダウンロード  
 以下のページから、LEDを点滅させるためのPythonプログラムをダウンロードし、`/home/pi`にコピーする。
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py)
 
@@ -51,14 +50,12 @@
 `$cd`  
 `$sudo chmod +x ./lchika.py`  
 
-4.プログラムの実行
-
+4.プログラムの実行  
 WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)で実行する。  
 
 `$sudo python ./lchika.py`  
 
-5.プログラムの改良
-
+5.プログラムの改良  
 点滅速度や点滅の割合を変更するとどうなるか確認してみよう。
 また、LEDのON/OFFだけでなく、明るさを変更するにはどうすればよいか考え、実験してみよう。
 
@@ -70,12 +67,12 @@ WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)�
 
 ![BME280](http://akizukidenshi.com/img/goods/L/K-09421.jpg)
 
-1.BME280のはんだ付け
+1.BME280のはんだ付け  
 BME280にピンヘッダをはんだ付けする。また、<u>J3と書かれた部分の金属面にもはんだを盛る。</u>
 BME280のデータシートは以下。  
 [http://akizukidenshi.com/download/ds/akizuki/AE-BME280_manu_v1.1.pdf](http://akizukidenshi.com/download/ds/akizuki/AE-BME280_manu_v1.1.pdf)
 
-2.BME280とRaspberry Piの配線
+2.BME280とRaspberry Piの配線  
 ジャンプワイヤを用いて、以下のようにRaspberry PiとBME280を接続する。配線を間違えないよう注意。
 Raspberry Piのピン配置については以下のサイトのいずれかを参照。  
 
@@ -84,21 +81,20 @@ Raspberry Piのピン配置については以下のサイトのいずれかを�
 [ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)  
 
 
-3.Raspberry PiでI2Cの使用を許可
+3.Raspberry PiでI2Cの使用を許可  
 BME280は、I2C（アイツーシ－）と呼ばれる通信規格でデータをRaspberry Piに送信する。
 Raspberry PiでI2Cが使用できるように設定を変更する。
 raspi-configの"Advanced Option"にある。
 
 `$sudo raspi-config`
 
-4.I2C用のライブラリをインストール
+4.I2C用のライブラリをインストール  
 PythonでI2Cを使用するためのライブラリをインストールする。ターミナルで以下のコマンドを実行。
 
 `$sudo apt-get install i2c-tools`  
 `$sudo apt-get python-smbus`  
 
 5.BME280が認識されているかの確認  
-
 ターミナルで以下のコマンドを実行。
 
 `$sudo i2cdetect -y 1`  
@@ -106,7 +102,7 @@ PythonでI2Cを使用するためのライブラリをインストールする�
 BME280が正しく接続され、Raspberry Piから認識されているならば、"76"などの数字が表示される。
 そうでない場合には、もう一度配線を確認してみる。
 
-6.サンプルプログラムの入手・修正
+6.サンプルプログラムの入手・修正  
 SWITCH SCIENCE という会社が公開してくれている、BME280から気温・湿度・気圧を取得して表示するプログラムを以下のページからダウンロードし、`/home/pi`にコピーする。  
 [https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py](https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py)  
 
@@ -121,16 +117,14 @@ SWITCH SCIENCE という会社が公開してくれている、BME280から気�
 `$sudo chmod +x ./bme280_sample.py`  
 
 
-8.サンプルプログラムの実行
-
+8.サンプルプログラムの実行  
 ターミナル上で以下のコマンドを実行。気温・湿度・気圧が表示されるはず。
 
 `$sudo python /home/pi/bme280_sample.py`
 
 センサ部分に息を吹きかけたりすると気温や湿度が変化するのがわかる。
 
-9.連続的な値の取得とファイルへの出力
-
+9.連続的な値の取得とファイルへの出力  
 BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書き込むように変更する。  
 以下のサイトからプログラムをダウンロードし、`/home/pi`にコピーする。  
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/bme280.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/bme280.py)
@@ -147,8 +141,7 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 これをExcelなどで開いてみよう。1秒ごとの温度・湿度・気圧が記録されている。
 グラフなどを作成してみると、一日の気温・湿度・気圧の変化が視覚的に確認しやすい。
 
-11.Pyhonで簡易Webサーバを構築し、リアルタイムでデータを閲覧
-
+11.Pyhonで簡易Webサーバを構築し、リアルタイムでデータを閲覧  
 以下のサイトから、`bme280`というフォルダをダウンロードし。`/home/pi`にコピーする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs](https://github.com/yu-workshop2019/yu-workshop2019_docs)
@@ -158,13 +151,11 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 `$cd /home/bme280`  
 `$sudo chmod 777 ./*.*`
 
-12.Raspberry Piとルータの接続
-
+12.Raspberry Piとルータの接続  
 Raspberry Piをyu-netなどから切り離す。 
 LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberry PiのLANポート部分にある緑色およびオレンジ色のLEDがついていることを確認する。
 
-13.Raspberry PiのIPアドレスの確認
-
+13.Raspberry PiのIPアドレスの確認  
 ターミナル上で以下のコマンドを実行。
 
 `$ip a | grep eth0`
@@ -174,8 +165,7 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 `inet 192.168.0.5/24`などの表示が出るはず。この数字（IPアドレス）は、例えば`192.168.0.10`のように、多少異なってもよい。この番号（IPアドレス）を覚えておく。
 
 
-14.Webサーバの起動
-
+14.Webサーバの起動  
 以下のコマンドを実行。
 
 `$cd ./bme280`  
@@ -184,12 +174,10 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 Webサーバが起動する。停止するときには再起動。
 
 
-15.PCやスマホをネットワークに接続
-
+15.PCやスマホをネットワークに接続  
 Raspberry Piを接続したルータに、手持ちのPCやスマホを接続する。有線/無線どちらでもよい。
 
-16.PCやスマホからリアルタイムで数値を確認する
-
+16.PCやスマホからリアルタイムで数値を確認する  
 PCやスマホのブラウザから、12.で調べた番号（IPアドレス）の88番ポートにアクセスする。  
 例えば、番号が`192.168.0.5`であった場合、ブラウザのURL入力欄に以下のように入力する。
 
@@ -226,8 +214,7 @@ Raspberry Piで回転角を正確に指定できるモータであるサーボ�
 `$ sudo python setup.py install`  
 `$sudo python3 setup.py install`  
 
-2.サーボモータとRaspberry Piの接続
-
+2.サーボモータとRaspberry Piの接続  
 以下のように、サーボモータSG-90とRaspberry PiのGPIOを接続する。Raspberry PiのGPIOの配置は、`$gpio readall`などで確認する。
 
 ```
@@ -239,8 +226,7 @@ SG-90 |  GPIO
 
 ```
 
-3.サーボモータを制御するためのPythonプログラムをダウンロード
-
+3.サーボモータを制御するためのPythonプログラムをダウンロード  
 以下のページから、サーボモータを制御するためのPythonプログラムをダウンロードし、`/home/pi`にコピーする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/servo.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/servo.py)
@@ -251,13 +237,12 @@ SG-90 |  GPIO
 `$cd`  
 `$sudo chmod +x ./servo.py`  
 
-5.プログラムの実行
-
+5.プログラムの実行  
 WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)で実行する。  
 
 `$sudo python ./servo.py 0`  
 
-サーボモータの回転角は、上のように第一引数で指定する。範囲は、整数で-90～90（度）である。
+サーボモータの回転角は、上のように第一引数で指定する。範囲は、整数で-90～90（度）である。  
 SG-90は180度しか回転しないため、この範囲外の数値を指定しても無視される。
 
 6.応用
@@ -272,12 +257,10 @@ SG-90は180度しか回転しないため、この範囲外の数値を指定し
 
 ![C270](https://images-na.ssl-images-amazon.com/images/I/51hbFkBQtqL._SX355_.jpg)
 
-1.Raspberry PiとC270の接続
-
+1.Raspberry PiとC270の接続  
 Raspberry PiのUSBポートにC270を接続する。
 
-2.認識されたかの確認
-
+2.認識されたかの確認  
 ターミナル上で以下のコマンドを実行。
 
 `$lsusb`
@@ -285,8 +268,7 @@ Raspberry PiのUSBポートにC270を接続する。
 Raspberry PiのUSBポートに接続されたデバイスの一覧が表示される。  
 C270が認識されていれば、`logitech USB Camera`などの表示が見つかるはず。
 
-3.OpenCVのインストール
-
+3.OpenCVのインストール  
 Pythonなどから画像を取り扱うためのライブラリであるOpenCVをインストールする。  
 ターミナル上で以下のコマンドを実行。
 
@@ -294,8 +276,7 @@ Pythonなどから画像を取り扱うためのライブラリであるOpenCV�
 
 このコマンドの実行が完了するにはしばらく時間がかかることがある。
 
-4.USBカメラのストリームを取得するPythonプログラムのダウンロード
-
+4.USBカメラのストリームを取得するPythonプログラムのダウンロード  
 以下のサイトから、USBカメラのストリームを取得するPythonプログラムをダウンロードし、`/home/pi`にコピーする。
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/stream.py)
 
@@ -305,8 +286,7 @@ Pythonなどから画像を取り扱うためのライブラリであるOpenCV�
 `$sudo chmod +x ./stream.py`  
 
 
-6.サンプルプログラムの実行
-
+6.サンプルプログラムの実行  
 ターミナル上で以下のコマンドを実行。
 
 `$python ./stream.py`
@@ -323,12 +303,10 @@ OpenCVを用いると、取得したこれらの画像・映像に加工を加�
 
 ![C270](https://images-na.ssl-images-amazon.com/images/I/51hbFkBQtqL._SX355_.jpg)
 
-1.Raspberry PiとC270の接続
-
+1.Raspberry PiとC270の接続  
 Raspberry PiのUSBポートにC270を接続する。
 
-2.認識されたかの確認
-
+2.認識されたかの確認  
 ターミナル上で以下のコマンドを実行。
 
 `$lsusb`
@@ -336,8 +314,7 @@ Raspberry PiのUSBポートにC270を接続する。
 Raspberry PiのUSBポートに接続されたデバイスの一覧が表示される。  
 C270が認識されていれば、`logitech USB Camera`などの表示が見つかるはず。
 
-3.mjpg-streamerのインストール
-
+3.mjpg-streamerのインストール  
 Raspberry Piでライブカメラを実現するためのソフトである、mjpg-streamerをインストールする。  
 （大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、ターミナルにコピペすることを推奨）
 
@@ -354,19 +331,16 @@ Raspberry Piでライブカメラを実現するためのソフトである、mj
 `$cd`  
 `$sudo mv mjpg-streamer/mjpg-streamer-experimental /opt/mjpg-streamer` 
 
-4.mjpg-streamer起動用スクリプトのダウンロード・配置
-
+4.mjpg-streamer起動用スクリプトのダウンロード・配置  
 mjpg-streamerを起動させるためのシェルスクリプトを以下のページからダウンロードし、`/home/pi`にコピーする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/mjpg-streamer_start.sh](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/mjpg-streamer_start.sh)
 
-5.Raspberry Piとルータの接続
-
+5.Raspberry Piとルータの接続  
 Raspberry Piをyu-netなどから切り離す。 
 LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberry PiのLANポート部分にある緑色およびオレンジ色のLEDがついていることを確認する。
 
-6.Raspberry PiのIPアドレスの確認
-
+6.Raspberry PiのIPアドレスの確認  
 ターミナル上で以下のコマンドを実行。
 
 `$ip a | grep eth0`
@@ -375,20 +349,17 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 
 `inet 192.168.0.5/24`などの表示が出るはず。この数字（IPアドレス）は、例えば`192.168.0.10`のように、多少異なってもよい。この番号（IPアドレス）を覚えておく。
 
-7.実行権限の追加と実行
-
+7.実行権限の追加と実行  
 ターミナル上で以下のコマンドを実行。mjpg-streamerが起動する。
 
 `$cd`  
 `$sudo chmod +x ./mjpg-streamer_start.sh`  
 `$./mjpg-streamer_start.sh`  
 
-8.PCやスマホをネットワークに接続
-
+8.PCやスマホをネットワークに接続  
 Raspberry Piを接続したルータに、手持ちのPCやスマホを接続する。有線/無線どちらでもよい。
 
-9.PCやスマホからのライブ映像視聴
-
+9.PCやスマホからのライブ映像視聴  
 PCやスマホのブラウザから、6.で調べた番号（IPアドレス）の9000番ポートにアクセスする。  
 例えば、番号が`192.168.0.5`であった場合、ブラウザのURL入力欄に以下のように入力する。
 
@@ -402,8 +373,7 @@ mjpg-streamerからのストリーミング映像がブラウザに表示され�
 
 ブラウザ上からRaspberry PiのGPIOを制御できるライブラリであるWebIOPiを用いて、ネットワーク経由のGPIO制御を実現する。
 
-1.wgetのプロキシ回避
-
+1.wgetのプロキシ回避  
 `/etc/environment`を編集
 
 `$sudo nano /etc/environment`
@@ -416,8 +386,7 @@ http_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 ```
 
-2.WebIOPiのダウンロード
-
+2.WebIOPiのダウンロード  
 以下のサイトから、WebIOPiをダウンロードし、`/home/pi`にコピーする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz)
@@ -425,8 +394,7 @@ ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 うまくいかない場合はこちら。  
 [http://webiopi.trouch.com/DOWNLOADS.html](http://webiopi.trouch.com/DOWNLOADS.html)
 
-3.ファイルの解凍・インストール・修正パッチ適用
-
+3.ファイルの解凍・インストール・修正パッチ適用  
 ターミナル上で以下のコマンドを順に実行。
 
 `$tar zxf WebIOPi-0.7.1.tar.gz`  
@@ -440,14 +408,12 @@ ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 `$wget https://raw.githubusercontent.com/neuralassembly/raspi/master/webiopi.service`  
 `$sudo mv webiopi.service /etc/systemd/system/`  
 
-4.HTMLファイルおよびPythonファイルのダウンロード・配置
-
+4.HTMLファイルおよびPythonファイルのダウンロード・配置  
 以下のサイトより、フォルダ`webiopi_source`をフォルダごとダウンロードし、`/home/pi`にコピーする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/](https://github.com/yu-workshop2019/yu-workshop2019_docs/)
 
-5.WebIOPiのconfigファイルの書き換え
-
+5.WebIOPiのconfigファイルの書き換え  
 WebIOPiのconfigファイルを書き換える。
 
 `$sudo nano /etc/webiopi/config`
@@ -462,8 +428,7 @@ WebIOPiのconfigファイルを書き換える。
 
 保存してnanoを終了。
 
-6.WebIOPiの起動・終了
-
+6.WebIOPiの起動・終了  
 WebIOPiを起動させる。
 
 `$sudo service webiopi start`
@@ -473,13 +438,11 @@ WebIOPiを起動させる。
 `$sudo service webiopi stop`
 
 
-7.Raspberry Piとルータの接続
-
+7.Raspberry Piとルータの接続  
 Raspberry Piをyu-netなどから切り離す。 
 LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberry PiのLANポート部分にある緑色およびオレンジ色のLEDがついていることを確認する。
 
-8.Raspberry PiのIPアドレスの確認
-
+8.Raspberry PiのIPアドレスの確認  
 ターミナル上で以下のコマンドを実行。
 
 `$ip a | grep eth0`
@@ -488,16 +451,13 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 
 `inet 192.168.0.5/24`などの表示が出るはず。この数字（IPアドレス）は、例えば`192.168.0.10`のように、多少異なってもよい。この番号（IPアドレス）を覚えておく。
 
-9.Lチカ回路の製作
-
+9.Lチカ回路の製作  
 動作確認のために、[第3章](https://yu-workshop2019.github.io/chapter_3/chapter_3)で作ったLEDの回路を組み立てる。
 
-10.PCやスマホをネットワークに接続
-
+10.PCやスマホをネットワークに接続  
 Raspberry Piを接続したルータに、手持ちのPCやスマホを接続する。有線/無線どちらでもよい。
 
-11.PCやスマホからのGPIO操作
-
+11.PCやスマホからのGPIO操作  
 PCやスマホのブラウザから、8.で調べた番号（IPアドレス）の8000番ポートにアクセスする。  
 例えば、番号が`192.168.0.5`であった場合、ブラウザのURL入力欄に以下のように入力する。
 
@@ -506,9 +466,7 @@ PCやスマホのブラウザから、8.で調べた番号（IPアドレス）�
 認証を求められたときは、ユーザ名:`webiopi`、パスワード:`raspberry`を入力する。
 
 ブラウザ上にいくつかのボタンが現れる。ボタンをおしてみよう。
-
-12.操作の拡張
-
+12.操作の拡張  
 それぞれのボタンに異なる操作を割り当てる。
 
 `index.html`の記述を変更するとボタンを増やせる。ボタンを押したときの動作も`index.html`内に記述する。
@@ -525,7 +483,7 @@ PCやスマホのブラウザから、8.で調べた番号（IPアドレス）�
 
 ※※※ 注意：コンセントから流れる100VACは大変危険で、感電の恐れがある。気を付けて行うこと！！！ ※※※  
 
-1.リレーキットの組み立て
+1.リレーキットの組み立て  
 秋月電子製の以下の製品のいずれかを用いる。どちらを使用してもよい。
 
 [大電流大型リレーモジュールキット　5Ｖ版](http://akizukidenshi.com/catalog/g/gK-11245/)  （電磁式リレー）
@@ -535,7 +493,7 @@ PCやスマホのブラウザから、8.で調べた番号（IPアドレス）�
 製品に同封されている組み立て説明書を見ながら、基板に部品をはんだ付けする。
 はんだ付けが終わったら、はんだの盛りすぎによるショートなどがないか、目視およびテスタでよく確認する。
 
-2.Raspberry Piへの配線
+2.Raspberry Piへの配線  
 リレーの制御用端子（3つ）を以下のようにRaspberry PiのGPIOと配線する。  配線に間違いがないかよく確認する。
 
 ```
@@ -549,15 +507,13 @@ CTRL or SIG | GPIO26
 リレーは、制御端子（CTRL or SIG）に電流が流れるとスイッチがONとなり、そうでないとOFFとなる。
 Raspberry PiのGPIOをON/OFFすることで、接続したリレーのON/OFFができる。
 
-3.プログラムによる制御
+3.プログラムによる制御  
 3章、または5章の1.で紹介した方法でリレーを制御することができる。リレーの基板に取り付けられた赤いLEDが点灯/消灯することを確認する。
 
 ※電磁式リレーは高速動作（0.1秒未満の連続ON/OFF）はしないこと。故障の原因となる。
 
-4.家電製品の接続
+4.家電製品の接続  
 電気スタンドなどの家電製品をリレーの出力端子に取り付けると、Raspberry PiからON/OFFすることができる。  
-
-
 
 ---
 
@@ -565,36 +521,30 @@ Raspberry PiのGPIOをON/OFFすることで、接続したリレーのON/OFFが�
 
 音声合成ソフトをインストールし、Raspberry Piを喋らせてみよう。
 
-1.Open-Jtalkのインストール
-
+1.Open-Jtalkのインストール  
 ターミナルで以下のコマンドを実行。。
 
 `$ sudo apt-get install open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001`
 
-2.サンプルコードのダウンロード
-
+2.サンプルコードのダウンロード  
 以下のサイトより、フォルダ`talk`をフォルダごとダウンロードし、`/home/pi`にコピーする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/](https://github.com/yu-workshop2019/yu-workshop2019_docs/)
 
-3.音響モデルの配置
-
+3.音響モデルの配置  
 ターミナルで以下のコマンドを実行。
 
 `$cd ./talk`  
 `$sudo mkdir /usr/share/hts-voice/miku`  
 `$sudo cp Voice.htsvoice /usr/share/hts-voice/miku/miku.htsvoice`  
 
-4.セリフの設定
-
+4.セリフの設定  
 `/home/pi/talk/serif.txt`を適当なエディタで開いて、しゃべらせたいセリフを書き込む（日本語化）。
 
-5.スピーカの接続
-
+5.スピーカの接続  
 Raspberry Piの3.5mmジャックにスピーカを接続する。
 
-6.サンプルプログラムの実行
-
+6.サンプルプログラムの実行  
 ターミナルで以下のコマンドを実行。
 
 `$cd ./talk`  
@@ -606,18 +556,7 @@ Raspberry Piの3.5mmジャックにスピーカを接続する。
 
 `$alsamixer`
 
-
-
-
 ---
-
-
-
-
-
-
-
-
 
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_3/chapter_3)

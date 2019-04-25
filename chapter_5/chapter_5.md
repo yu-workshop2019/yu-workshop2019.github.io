@@ -173,11 +173,11 @@ Raspberry Piで回転角を正確に指定できるモータであるサーボ�
 
 2.サーボモータとRaspberry Piの接続
 
-以下のように、サーボモータSG-90とRaspberry PiのGPIOを接続する。Raspberry PiのGPIOの配置は、`$gpio reaadall`などで確認する。
+以下のように、サーボモータSG-90とRaspberry PiのGPIOを接続する。Raspberry PiのGPIOの配置は、`$gpio readall`などで確認する。
 
 ```
 SG-90 |  GPIO
-------------
+----------------
   黄  | GPIO 12
   赤  |    5V
   茶  |    GND

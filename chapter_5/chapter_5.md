@@ -151,6 +151,65 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 
 ![SG-90](http://akizukidenshi.com/img/goods/C/M-08761.jpg)
 
+Raspberry Piで回転角を正確に指定できるモータであるサーボモータを制御してみよう。
+
+1.WiringPi-Pythonのインストール  
+ターミナル上で以下のコマンドを実行し、PythonでRaspberry PiのGPIOを制御するためのライブラリを導入する。
+（大変長いので、Raspberry Pi上のブラウザでこのページを表示させ、ターミナルにコピペすることを推奨）
+
+`$sudo apt-get update`  
+`$sudo apt-get install git`  
+`$git config --global http.proxy http://proxy.cc.yamaguchi-u.ac.jp:8080`  
+`$git config --global https.proxy http://proxy.cc.yamaguchi-u.ac.jp:8080`  
+`$sudo rm -rf WiringPi-Python`  
+`$sudo apt-get install python-dev python-setuptools swig`  
+`$git clone --recursive https://github.com/WiringPi/WiringPi-Python.git`  
+`$cd WiringPi-Python/WiringPi`  
+`$sudo ./build`  
+`$cd ..`  
+`$swig -python wiringpi.i`  
+`$ sudo python setup.py install`  
+`$sudo python3 setup.py install`  
+
+2.サーボモータとRaspberry Piの接続
+
+以下のように、サーボモータSG-90とRaspberry PiのGPIOを接続する。Raspberry PiのGPIOの配置は、`$gpio reaadall`などで確認する。
+
+```
+SG-90 |  GPIO
+------------
+  黄  | GPIO 12
+  赤  |    5V
+  茶  |    GND
+
+```
+
+3.サーボモータを制御するためのPythonプログラムをダウンロード
+
+以下のページから、サーボモータを制御するためのPythonプログラムをダウンロードし、`/home/pi`にコピーする。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/servo.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/servo.py)
+
+
+4.実行権限の追加
+
+`$cd`  
+`$sudo chmod +x ./servo.py`  
+
+5.プログラムの実行
+
+WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)で実行する。  
+
+`$sudo python ./servo.py 0`  
+
+サーボモータの回転角は、上のように第一引数で指定する。範囲は、整数で-90～90（度）である。
+SG-90は180度しか回転しないため、この範囲外の数値を指定しても無視される。
+
+6.応用
+
+サーボモータで何ができるか考えてみよう。
+
+
 ---
 
 

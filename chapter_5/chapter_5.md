@@ -106,9 +106,14 @@ PythonでI2Cを使用するためのライブラリをインストールする�
 BME280が正しく接続され、Raspberry Piから認識されているならば、"76"などの数字が表示される。
 そうでない場合には、もう一度配線を確認してみる。
 
-6.サンプルプログラムの入手
+6.サンプルプログラムの入手・修正
 SWITCH SCIENCE という会社が公開してくれている、BME280から気温・湿度・気圧を取得して表示するプログラムを以下のページからダウンロードし、`/home/pi`にコピーする。  
 [https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py](https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py)  
+
+ダウンロードしたbme280_sample.pyをnanoなどで開き、3行目を以下のように修正する。
+
+修正前:`from smbus2 import SMBus`  
+修正後:`from smbus import SMBus`
 
 7.実行権限の追加
 

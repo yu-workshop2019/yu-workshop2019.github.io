@@ -105,7 +105,7 @@ raspi-configの"Advanced Option"にある。
 PythonでI2Cを使用するためのライブラリをインストールする。ターミナルで以下のコマンドを実行。
 
 `$sudo apt-get install i2c-tools`  
-`$sudo apt-get python-smbus`  
+`$sudo apt-get install python-smbus`  
 
 5.BME280が認識されているかの確認  
 ターミナルで以下のコマンドを実行。

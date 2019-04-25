@@ -354,11 +354,11 @@ WebIOPiのconfigファイルを書き換える。
 
 `[SCRIPTS]`の欄の、`#myscript = /home/pi/webiopi/examples/scripts/macros/script.py`と書かれている行の下に以下のように追記する。
 
-`myscript = /home/pi/webiopi_source/python/script.py`
+`myscript = /home/pi/webiopi_source/script.py`
 
 `[HTML]`の欄の、`#doc-root = /home/pi/webiopi/examples/scripts/macros`と書かれている行の下に以下のように追記する。
 
-`doc-root = /home/pi/webiopi_source/html`
+`doc-root = /home/pi/webiopi_source`
 
 保存してnanoを終了。
 
@@ -410,6 +410,10 @@ PCやスマホのブラウザから、8.で調べた番号（IPアドレス）�
 12.操作の拡張
 
 それぞれのボタンに異なる操作を割り当てる。
+
+`index.html`の記述を変更するとボタンを増やせる。ボタンを押したときの動作も`index.html`内に記述する。
+
+`/home/pi/webiopi_source`内に、GPIOの操作など、実行したいPythonプログラムを追加する。
  
 ---
 

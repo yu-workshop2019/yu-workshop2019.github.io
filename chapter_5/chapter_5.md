@@ -80,6 +80,19 @@ Raspberry Piのピン配置については以下のサイトのいずれかを�
 [ツール・ラボ 第22回 Raspberry PiのGPIO概要](https://tool-lab.com/make/raspberrypi-startup-22)  
 [ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)  
 
+```
+BME280 | GPIO
+--------------
+  VDD  | 3.3V
+  GND  | GND
+  CSB  |  NC
+  SDI  | SDA1
+  SDO  | GND
+  SCK  | SCL1
+  
+  NC:未接続
+```
+
 
 3.Raspberry PiでI2Cの使用を許可  
 BME280は、I2C（アイツーシ－）と呼ばれる通信規格でデータをRaspberry Piに送信する。
@@ -106,7 +119,7 @@ BME280が正しく接続され、Raspberry Piから認識されているなら�
 SWITCH SCIENCE という会社が公開してくれている、BME280から気温・湿度・気圧を取得して表示するプログラムを以下のページからダウンロードし、`/home/pi`にコピーする。  
 [https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py](https://github.com/SWITCHSCIENCE/BME280/blob/master/Python27/bme280_sample.py)  
 
-ダウンロードしたbme280_sample.pyをnanoなどで開き、3行目を以下のように修正する。
+ダウンロードした`bme280_sample.py`をnanoなどで開き、3行目を以下のように修正する。
 
 修正前:`from smbus2 import SMBus`  
 修正後:`from smbus import SMBus`
@@ -142,11 +155,11 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 グラフなどを作成してみると、一日の気温・湿度・気圧の変化が視覚的に確認しやすい。
 
 11.Pyhonで簡易Webサーバを構築し、リアルタイムでデータを閲覧  
-以下のサイトから、`bme280`というフォルダをダウンロードし。`/home/pi`にコピーする。
+以下のサイトから、`bme280`というフォルダをダウンロードし、`/home/pi`にコピーする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs](https://github.com/yu-workshop2019/yu-workshop2019_docs)
 
-以下のコマンドを実行。
+ターミナルで以下のコマンドを実行。
 
 `$cd /home/bme280`  
 `$sudo chmod 777 ./*.*`
@@ -162,7 +175,7 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 
 記号`|`は、`Shift+\`で入力できる。
 
-`inet 192.168.0.5/24`などの表示が出るはず。この数字（IPアドレス）は、例えば`192.168.0.10`のように、多少異なってもよい。この番号（IPアドレス）を覚えておく。
+`inet 192.168.0.5/24`などの表示が出るはず。この数字（IPアドレス）は、例えば`192.168.0.10`のように、多少異なってもよい。画面の写真を撮るなどしてこの番号（IPアドレス）を控えておく。必要なのは、3つの`.`で区切られた4つの数字。`/24`などの部分は覚えておく必要はない。
 
 
 14.Webサーバの起動  
@@ -171,7 +184,7 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 `$cd ./bme280`  
 `$sudo ./start_bme280.sh`
 
-Webサーバが起動する。停止するときには再起動。
+Webサーバが起動する。停止するときにはOSを再起動。
 
 
 15.PCやスマホをネットワークに接続  

@@ -322,6 +322,19 @@ USBカメラから取得した映像が表示されたウィンドウが画面�
 OpenCVを用いると、取得したこれらの画像・映像に加工を加えたりすることもできる。
 この例では取得したストリームに対して輪郭抽出した画像も表示している。
 
+7.顔検出  
+OpenCVでは手軽に顔検出を試すことができる。    
+以下のサイトから、フォルダ`opencv_face`をフォルダごとダウンロードし、`/home/pi`にコピーする。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs](https://github.com/yu-workshop2019/yu-workshop2019_docs)  
+
+ターミナル上で以下のコマンドを実行。
+
+`$cd`  
+`$cd ./opencv_face`  
+`$sudo chmod +x ./*.py`  
+
+`face_detect.py`や`face_mask.py`を実行してみよう。
+
 ---
 
 

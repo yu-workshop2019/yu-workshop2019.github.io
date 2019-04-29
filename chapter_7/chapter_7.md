@@ -41,9 +41,20 @@ date >> /home/pi/date.txt
 ```
 入力を終えたら保存し、nanoを終了する。
 
+シェルスクリプトに書く内容は、ターミナル上に入力する内容と同じである。コマンドをどこに入力するかの違いでしかない。シェルスクリプトには、複数のコマンドを記述しておくこともできる。コマンドは一行に1つ記述する。コマンドは上から順に実行される。
 
+シェルスクリプトを実行する前に、実行権限を付与しておく。
 
+`$sudo chmod a+x /home/pi/record_date.sh`  
+`$sudo chmod a+w /home/pi/date.txt`  
 
+`record_date.sh`を実行する。
+
+`$./record_date.sh`
+
+`date.txt`を確認してみよう。
+
+`cat /home/pi/date.txt`
 
 ---
 

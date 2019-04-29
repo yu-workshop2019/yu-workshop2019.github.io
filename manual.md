@@ -20,5 +20,7 @@
 
 ### [第6章 作品の製作](/chapter_6/chapter_6)
 
+### [第7章 その他の情報](/chapter_7/chapter_7)
+
 
 [トップページへ](https://yu-workshop2019.github.io/)

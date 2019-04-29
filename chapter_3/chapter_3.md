@@ -18,6 +18,9 @@ GPIOに割り当てられた機能の詳細については以下のサイトで�
 [ツール・ラボ >> 第22回 Raspberry PiのGPIO概要 ](https://tool-lab.com/make/raspberrypi-startup-22/)  
 [ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)  
 
+めんどくさがりな人はこちら。  
+[raspi_pin_assigin.jpg](raspi_pin_assigin.jpg)
+
 Raspberry Piを裏返したときに、GPIOの根本の半田部分が1本だけ四角くなっている（他は円形）。これが1番ピンである。
 1番ピンを目印として、上記サイトで示されているピン配置図と実際のピンの並びを比較する。
 

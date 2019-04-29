@@ -29,7 +29,7 @@ GPIOの配置や、現在の各ピンの状態などは、コマンドライン�
 1. Raspberry PiにLEDを接続するために以下のような回路を作る。  
 ![raspi_ltica](raspi_ltica.png)  
 
-使用した抵抗の抵抗値を読んでみよう。抵抗早見表は以下。  
+抵抗は、表面に描かれた帯の色と並びによって抵抗値を表現している。使用した抵抗の抵抗値（橙橙茶金）を読んでみよう。抵抗早見表は以下。  
 [http://part.freelab.jp/s_regi_list.html](http://part.freelab.jp/s_regi_list.html)  
 また、回路に抵抗を入れる意味について考えてみよう。
 

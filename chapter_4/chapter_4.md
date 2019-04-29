@@ -227,7 +227,7 @@ FizzBuzzとは、次のような条件を満たすプログラムのことであ
 
 すなわち、FizzBuzzのプログラムの出力結果（の一部）は次のようになる。
 
-'''
+```
 1
 2
 Fizz
@@ -245,9 +245,9 @@ Fizz
 FizzBuzz
 16
 以下続く...
-'''
+```
 
-解凍例は以下。
+解凍例は以下。  
 [https://ja.wikipedia.org/wiki/Fizz_Buzz](https://ja.wikipedia.org/wiki/Fizz_Buzz)
 
 ---

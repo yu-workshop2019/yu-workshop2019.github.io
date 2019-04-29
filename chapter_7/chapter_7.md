@@ -60,6 +60,27 @@ date >> /home/pi/date.txt
 
 ### 2.プログラムの自動起動(/etc/rc.local)
 
+Raspberry Piが起動したときに、何らかのプログラムを自動で実行させたいことがある。このようなことを実現するにはいくつかの方法がある。
+
+この章では、`/etc/rc.local`を用いる方法を紹介する。  
+`/etc/rc.local`による自動起動の方法はとても簡単である。起動時に実行したいプログラムを、`/etc/rc.local`に記述しておくだけでよい。
+
+実行させたいプログラムには実行権限が付与されていなければならない。
+
+`$sudo chmod a+x /home/pi/record_date.sh`  
+
+`/etc/rc.local`を開く。
+
+`$sudo nano /etc/rc.local`
+
+`/etc/rc.local`末尾の、`exit 0`と記述されている行の一行上に、実行したいプログラムやコマンドを絶対パスで記述する。プログラム内でディレクトリやファイルを指定するときも絶対パスでなければならない。
+
+`/home/pi/record_date.sh`  
+
+追記出来たらnanoを終了。Raspberry Piを再起動してから、`date.txt`を確認してみよう。
+
+`cat /home/pi/date.txt`
+
 ---
 
 ### 3.プログラムの一定間隔での実行(cron)  

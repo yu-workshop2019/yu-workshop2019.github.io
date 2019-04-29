@@ -31,9 +31,9 @@
 
 ---
 
-### 6.xrdpによるRDP（リモートデスクトップ接続）
+### 6.RDPによるリモートデスクトップ接続(xrdp)
 
-
+---
 
 
 [前の章へ](https://yu-workshop2019.github.io/chapter_6/chapter_6)

@@ -28,6 +28,11 @@ GPIOの配置や、現在の各ピンの状態などは、コマンドライン�
 一例として、GPIO26を使用して、LEDを点灯/消灯させてみる（Lチカ）。  
 1. Raspberry PiにLEDを接続するために以下のような回路を作る。  
 ![raspi_ltica](raspi_ltica.png)  
+
+使用した抵抗の抵抗値を読んでみよう。抵抗早見表は以下。  
+[http://part.freelab.jp/s_regi_list.html](http://part.freelab.jp/s_regi_list.html)  
+また、回路に抵抗を入れる意味について考えてみよう。
+
 2. GPIO26の現在の状態を確認  
 `$gpio readall` 
 3. GPIO26を出力に設定  

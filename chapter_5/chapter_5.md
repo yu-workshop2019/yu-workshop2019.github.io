@@ -61,7 +61,7 @@
 3.実行権限の追加
 
 `$cd`  
-`$sudo chmod +x ./lchika.py`  
+`$sudo chmod a+x ./lchika.py`  
 
 4.プログラムの実行  
 WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)で実行する。  
@@ -140,7 +140,7 @@ SWITCH SCIENCE という会社が公開してくれている、BME280から気�
 7.実行権限の追加
 
 `$cd`  
-`$sudo chmod +x ./bme280_sample.py`  
+`$sudo chmod a+x ./bme280_sample.py`  
 
 
 8.サンプルプログラムの実行  
@@ -158,7 +158,7 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 10.実行権限の追加と実行
 
 `$cd`  
-`$sudo chmod +x ./bme280.py`  
+`$sudo chmod a+x ./bme280.py`  
 `$sudo python ./bme280.py`
 
 停止するときにはターミナル上で`Ctrl+C`を押す。
@@ -261,7 +261,7 @@ SG-90 |  GPIO
 4.実行権限の追加
 
 `$cd`  
-`$sudo chmod +x ./servo.py`  
+`$sudo chmod a+x ./servo.py`  
 
 5.プログラムの実行  
 WiringPi-Pythonを使用したPythonプログラムは、管理者権限(sudo)で実行する。  
@@ -309,7 +309,7 @@ Pythonなどから画像を取り扱うためのライブラリであるOpenCV�
 5.実行権限の追加
 
 `$cd`  
-`$sudo chmod +x ./stream.py`  
+`$sudo chmod a+x ./stream.py`  
 
 
 6.サンプルプログラムの実行  
@@ -331,7 +331,7 @@ OpenCVでは手軽に顔検出を試すことができる。
 
 `$cd`  
 `$cd ./opencv_face`  
-`$sudo chmod +x ./*.py`  
+`$sudo chmod a+x ./*.py`  
 
 `face_detect.py`や`face_mask.py`を実行してみよう。
 
@@ -392,7 +392,7 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 ターミナル上で以下のコマンドを実行。mjpg-streamerが起動する。
 
 `$cd`  
-`$sudo chmod +x ./mjpg-streamer_start.sh`  
+`$sudo chmod a+x ./mjpg-streamer_start.sh`  
 `$./mjpg-streamer_start.sh`  
 
 8.PCやスマホをネットワークに接続  

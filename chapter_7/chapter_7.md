@@ -54,7 +54,7 @@ date >> /home/pi/date.txt
 
 `date.txt`を確認してみよう。
 
-`cat /home/pi/date.txt`
+`$cat /home/pi/date.txt`
 
 ---
 
@@ -79,7 +79,7 @@ Raspberry Piが起動したときに、何らかのプログラムを自動で�
 
 追記出来たらnanoを終了。Raspberry Piを再起動してから、`date.txt`を確認してみよう。
 
-`cat /home/pi/date.txt`
+`$cat /home/pi/date.txt`
 
 ---
 

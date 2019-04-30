@@ -24,7 +24,7 @@
 
 `/home/pi/date.txt`が生成されている。`date.txt`を開いて内容を確認する。
 
-`cat /home/pi/date.txt`
+`$cat /home/pi/date.txt`
 
 実行した日付時刻が記録されているはずである。  
 このことから、`$date >> /home/pi/date.txt`は、`/home/pi`以下に、実行時点の日付時刻が記録された`date.txt`というテキストファイルを生成するコマンドであることが分かる。

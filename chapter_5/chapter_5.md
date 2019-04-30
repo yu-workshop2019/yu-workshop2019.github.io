@@ -194,7 +194,7 @@ LANケーブルを用いて、Raspberry Piとルータを接続する。Raspberr
 14.Webサーバの起動  
 以下のコマンドを実行。
 
-`$cd ./bme280`  
+`$cd /home/pi/bme280`  
 `$sudo ./start_bme280.sh`
 
 Webサーバが起動する。停止するときにはOSを再起動。
@@ -220,7 +220,7 @@ PCやスマホのブラウザから、12.で調べた番号（IPアドレス）�
 
 ![SG-90](http://akizukidenshi.com/img/goods/C/M-08761.jpg)
 
-Raspberry Piで回転角を正確に指定できるモータであるサーボモータを制御してみよう。
+Raspberry Piでサーボモータ（回転角を正確に指定できるモータ）を制御してみよう。
 
 1.WiringPi-Pythonのインストール  
 ターミナル上で以下のコマンドを実行し、PythonでRaspberry PiのGPIOを制御するためのライブラリを導入する。
@@ -428,9 +428,6 @@ ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 2.WebIOPiのダウンロード  
 以下のサイトから、WebIOPiをダウンロードし、`/home/pi`にコピーする。
 
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/WebIOPi-0.7.1.tar.gz)
-
-うまくいかない場合はこちら。  
 [http://webiopi.trouch.com/DOWNLOADS.html](http://webiopi.trouch.com/DOWNLOADS.html)
 
 3.ファイルの解凍・インストール・修正パッチ適用  

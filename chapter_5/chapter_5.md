@@ -174,7 +174,7 @@ BME280から連続して値を取得し、Raspberry PiのmicroSDカードに書�
 
 ターミナルで以下のコマンドを実行。
 
-`$cd /home/bme280`  
+`$cd /home/pi/bme280`  
 `$sudo chmod 777 ./*.*`
 
 12.Raspberry Piとルータの接続  

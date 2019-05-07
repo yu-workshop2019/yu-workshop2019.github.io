@@ -70,6 +70,8 @@ Pythonプログラムは、拡張子が`.py`で表される。メモ帳などの
 3. `hello.py`を実行する。  
 `$python hello.py`  
 
+以下、Pythonプログラムを実行するときはこのようにする。また、Pythonプログラムは`/home/pi`に置くこととする。
+
 `hello.py`は、3行の簡単なプログラムである。  
 
 hello.py
@@ -259,6 +261,8 @@ Pythonで関数を使用するためには以下のようにする。
 
 [https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/func.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/func.py)
 
+プログラムを実行してみよう。
+
 func.py
 ```
 #!/usr/bin/env python
@@ -302,7 +306,27 @@ Pythonは動的型付け（変数に代入された内容から、自動的に�
 
 `func.py`は、文字を表示するだけの関数`func()`、引数として受け取った自然数の二乗を返す関数`pow()`、0～9の範囲の整数の乱数を2つ返す関数`rand()`、これらの関数を呼び出す関数`main()`からなる。関数`rand()`に注目するとわかるように、Pythonでは複数の戻り値を返すことができる。もちろん、複数の引数を渡すこともできる。
 
-特徴的なのは、33行目の`if __name__ == '__main__':`という見慣れない記述である。
+特徴的なのは、33行目の`if __name__ == '__main__':`という見慣れない記述である。  
+Pythonでは、自作のプログラムを「モジュール」として他のプログラムから使用することができる。たとえば、このプログラム`func.py`を、他のプログラム内で、
+
+```
+import func
+a = func.pow(4)
+```
+
+などのようにインポートすることができる。この場合、変数`a`には、`func.py`の関数である`pow()`に引数として4が渡された結果である16が代入される。
+
+ここで、`func.py`が、1.直接(`$python ./func.py`などのように)実行された場合 と、2.他のプログラムからモジュールとしてインポートされた場合　の2パターンについて、それぞれ異なる挙動をさせたい場合を考える。  
+1.の場合のように、`func.py`が直接実行された場合には、まず`if __name__ == '__main__':`以下の部分が実行される。したがって、1.の場合に実行したい処理は、`if __name__ == '__main__':`部分に記述しておけばよい。`func.py`では、`if __name__ == '__main__':`部分で関数`main()`を呼び出し、関数`main()`内で、それぞれの関数を呼び出している。  
+一方、2.の場合では`if __name__ == '__main__':`は実行されない。
+
+`func.py`をインポートして、`func.py`内の関数を呼び出すようなPythonプログラムを作ってみよう。
+
+回答例は以下。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/call_func.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/call_func.py)
+
+---
 
 ### 参考:Pythonの学習方法
 

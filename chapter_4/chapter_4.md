@@ -253,6 +253,57 @@ FizzBuzz
 
 ---
 
+### 9.関数
+
+Pythonで関数を使用するためには以下のようにする。
+
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/func.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/func.py)
+
+func.py
+```
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+def func():
+    print("funcを実行しました。")
+
+def pow(x):
+    print("powを実行しました。")
+    return(x * x)
+
+def rand():
+    import random
+    print("randを実行しました。")
+    a = random.randint(0, 9)
+    b = random.randint(0, 9)
+    return (a, b)
+
+def main():
+    print("mainを実行しました。")
+
+    #funcの実行
+    func()
+
+    #powの実行
+    x = 5
+    print(str(x) + "の2乗は" + str(pow(x)) + "です。")
+
+    #randの実行
+    a, b = rand()
+    print("2つの乱数は、" + str(a) + "と" +  str(b) + "です。")
+
+#プログラム実行時に実行される部分
+if __name__ == '__main__':
+    print("まずここが実行されます。")
+    main()
+```
+
+Pythonは動的型付け（変数に代入された内容から、自動的に変数の型を類推する）に対応した言語であるので、C言語などと異なり、関数に戻り値の型などを明記する必要はない。関数の内部はインデントで字下げする必要があることに注意。
+
+`func.py`は、文字を表示するだけの関数`func()`、引数として受け取った自然数の二乗を返す関数`pow()`、0～9の範囲の整数の乱数を2つ返す関数`rand()`、これらの関数を呼び出す関数`main()`からなる。関数`rand()`に注目するとわかるように、Pythonでは複数の戻り値を返すことができる。もちろん、複数の引数を渡すこともできる。
+
+特徴的なのは、33行目の`if __name__ == '__main__':`という見慣れない記述である。
+
 ### 参考:Pythonの学習方法
 
 Python（に限らず多くのプログラミング言語）には数えきれないほどの文法や規則があり、そのすべてを短期間で理解し使いこなすことは容易ではない。

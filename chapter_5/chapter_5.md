@@ -87,11 +87,9 @@ BME280のデータシートは以下。
 
 2.BME280とRaspberry Piの配線  
 ジャンプワイヤを用いて、以下のようにRaspberry PiとBME280を接続する。配線を間違えないよう注意。
-Raspberry Piのピン配置については以下のサイトのいずれかを参照。  
+Raspberry Piのピン配置については以下を参照。  
 
-[RaspberryPi2のPin配置](http://www.ic.daito.ac.jp/~mizutani/raspi/raspi_pins.html)  
-[ツール・ラボ 第22回 Raspberry PiのGPIO概要](https://tool-lab.com/make/raspberrypi-startup-22)  
-[ラズパイの出力電圧を確認してみた](https://qiita.com/takeru56/items/985ae67f97def2218208)  
+[raspi_gpio_assign.jpg](https://yu-workshop2019.github.io/chapter_3/raspi_gpio_assign.jpg)
 
 ```
 BME280 | GPIO
@@ -531,7 +529,11 @@ PCやスマホのブラウザから、8.で調べた番号（IPアドレス）�
 はんだ付けが終わったら、はんだの盛りすぎによるショートなどがないか、目視およびテスタでよく確認する。
 
 2.Raspberry Piへの配線  
-リレーの制御用端子（3つ）を以下のようにRaspberry PiのGPIOと配線する。  配線に間違いがないかよく確認する。
+リレーの制御用端子（3つ）を以下のようにRaspberry PiのGPIOと配線する。  配線に間違いがないかよく確認する。  
+Raspberry Piのピン配置は以下を参照。
+
+[raspi_gpio_assign.jpg](https://yu-workshop2019.github.io/chapter_3/raspi_gpio_assign.jpg)
+
 
 ```
     Relay   |  GPIO  
@@ -551,7 +553,7 @@ Raspberry PiのGPIOをON/OFFすることで、接続したリレーのON/OFFが�
 
 4.家電製品の接続  
 電気スタンドなどの家電製品をリレーの出力端子に取り付けると、Raspberry PiからON/OFFすることができる。  
-WebIOPiｂによる操作とあわせて使ってみよう。
+WebIOPiによる操作とあわせて使ってみよう。
 
 ---
 

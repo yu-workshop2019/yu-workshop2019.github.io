@@ -148,7 +148,7 @@ static domain_name_servers=192.168.0.1
 ノートPCからネットワークを通じてRaspberry Piに遠隔ログインしたり、Raspberry PiとPC間でファイル転送する方法について解説する。  
 この方法を使用すれば、Raspberry Piにマウス・キーボード・モニタを接続することなしに開発できるため、便利である。
 
-0.Raspberry PiでSSH接続を有効にする。`raspi-config`の`interfacing Option`内にある。
+0.Raspberry PiでSSH接続を有効にする。`raspi-config`の`Interfacing Option`内にある。
 
 `$sudo raspi-config`
 
@@ -196,7 +196,7 @@ PASS:raspberry
 `$sudo apt-get install xrdp`  
 `$sudo reboot`  
 
-2.インストールが終了したら、Raspberry Piをyunetから切り離し、Raspberry PiのIPアドレスを固定するよう、`/etc/dhcpcd.conf`を再度設定する。設定が完了したら再起動し、アイ・オー・データ機器製のルータにLANケーブルで有線接続する。
+2.インストールが終了したら、Raspberry Piをyunetから切り離し、Raspberry PiのIPアドレスを固定するよう、`/etc/dhcpcd.conf`を再度設定する（`#`を消し、設定を再度有効にする）。設定が完了したら再起動し、アイ・オー・データ機器製のルータにLANケーブルで有線接続する。
 
 3.ノートPCをルータに接続する。有線/無線のどちらでもよい。
 

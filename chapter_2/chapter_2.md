@@ -179,6 +179,34 @@ Acquire::ftp::proxy "ftp://proxy.cc.yamaguchi-u.ac.jp:8080/";
 
 ---
 
+
+### 参考:ブラウザのプロキシ回避
+
+上記項目6.および9.の設定を行ってもブラウザから学外のページが閲覧できない場合は、以下を試す。
+
+＜対策1＞  
+`/etc/environment`を編集
+
+`$sudo nano /etc/environment`
+
+`/etc/environment`末尾に以下の3行を追記
+
+```
+https_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+http_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
+```
+
+再起動したのちにブラウザを開いて学外のページにアクセスしてみる。
+
+
+＜対策2＞  
+上記対策1を行っても状況が改善しない場合は、ターミナル上で以下のコマンドを実行してchromiumを起動。
+
+`$chromium-browser --proxy-server="proxy.cc.yamaguchi-u.ac.jp:8080"`
+
+---
+
 ### 参考：apt（アプト）について
 
 - Raspbianを含むLinux（より正確にはDebian）では、ソフトのインストールにapt（アプト）と呼ばれる仕組みを利用している。

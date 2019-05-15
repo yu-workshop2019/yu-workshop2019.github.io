@@ -27,6 +27,10 @@
 3.`Download Zip`というボタンをクリック。  
 4.圧縮されたZipファイルがダウンロードされるので適当な方法で解凍する。  
 
+<b>Raspberry Piで学外のWebサイトが閲覧できない不具合が複数見られています。  
+  [第2章 Raspberry Piの初期設定](https://yu-workshop2019.github.io/chapter_2/chapter_2)の「9.Webの閲覧」部分に対策を追記しました。  
+  Raspberry PiでWebが閲覧できない人は試してみて下さい。</b>
+
 ---
 
 ### 2.LEDの点滅を制御

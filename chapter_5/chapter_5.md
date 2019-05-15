@@ -108,7 +108,7 @@ BME280 | GPIO
 3.Raspberry PiでI2Cの使用を許可  
 BME280は、I2C（アイツーシ－）と呼ばれる通信規格でデータをRaspberry Piに送信する。
 Raspberry PiでI2Cが使用できるように設定を変更する。
-raspi-configの"Advanced Option"にある。
+raspi-configの"Interfacing Option"にある。
 
 `$sudo raspi-config`
 

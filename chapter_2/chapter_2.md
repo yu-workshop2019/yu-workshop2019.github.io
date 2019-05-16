@@ -205,6 +205,16 @@ ftp_proxy=http://proxy.cc.yamaguchi-u.ac.jp:8080/
 
 `$chromium-browser --proxy-server="proxy.cc.yamaguchi-u.ac.jp:8080"`
 
+この長いコマンドを毎回実行するのがめんどくさいという人はターミナルで以下を実行する。
+
+`$cd`  
+`$wget https://raw.githubusercontent.com/yu-workshop2019/yu-workshop2019_docs/master/chromium.sh`  
+`$sudo chmod a+x ./chromium.sh`
+
+次回からは、ターミナル上で以下のコマンドを実行するとchromium-browserが起動する。
+
+`$./chromium.sh`
+
 ---
 
 ### 参考：apt（アプト）について

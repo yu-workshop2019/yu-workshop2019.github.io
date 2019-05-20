@@ -338,6 +338,31 @@ OpenCVでは手軽に顔検出を試すことができる。
 
 `face_detect.py`や`face_mask.py`を実行してみよう。
 
+8.タイムラプス動画の制作
+
+NHKの教育番組でよくあるような「時間を縮めて見ています」の動画を作ってみよう。
+
+以下のサイトから、一定間隔で画像を撮影するPythonプログラム`timelapse.py`をダウンロードし、`/home/pi`にコピーする。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/timelapse.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/timelapse.py)
+
+撮影間隔は、プログラム中にある`INTERVAL`を変更することで設定できる。デフォルトでは1秒。
+
+実行権限の付加と画像保存フォルダ生成を行う。
+
+`$cd`  
+`$sudo chmod a+x ./timelapse.py`  
+`$mkdir -p ./timelapse`  
+
+タイムラプスのプログラムを実行する。実行した状態でしばらく放置すると、`/home/pi/timelapse`に撮影された画像が次々と保存されていく。
+
+画像を適当な枚数(100～500枚程度)撮影出来たらプログラムを停止し、`/home/pi/timelapse`をUSBメモリなどでWindowsPCにコピーする。
+
+WindowsPC上で、以下のソフトウェアによってタイムラプス動画を制作できる。本来は天体写真用のソフトである。
+
+[比較明合成フリーソフト SiriusComp](http://phaku.net/siriuscomp/)
+
+雲や月の動き、カイワレダイコンの発芽、交差点での自動車や歩行者の動きなどを撮影すると面白い。
+
 ---
 
 

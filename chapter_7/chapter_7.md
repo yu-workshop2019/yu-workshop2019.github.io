@@ -129,7 +129,7 @@ Raspberry PiのIPアドレスを設定するには、以下のファイルを編
 `/etc/dhcpcd.conf`末尾に以下の内容を追記する。これは、Raspberry Piの有線LANポートの設定である。
 
 ```
-interfece eth0
+interface eth0
 static ip_address=192.168.0.***/24
 static routers=192.168.0.1
 static domain_name_servers=192.168.0.1

@@ -695,6 +695,10 @@ Raspberry Piの3.5mmジャックにスピーカを接続する。
 
 `$alsamixer`
 
+HDMIは映像と音声を1本のケーブルで伝送できる規格であるため、HDMIでモニタ出力をしていると、3.5mmジャックから音声が出力されないことがある。  
+その場合は、`$sudo raspi-config`で設定を変更する。  
+7 Advanced Option -> A4 Audio -> 1 Force 3.5mm ('headphone') jack を選択。
+
 ---
 
 

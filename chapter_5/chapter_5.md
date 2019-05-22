@@ -363,6 +363,21 @@ WindowsPC上で、以下のソフトウェアによってタイムラプス動�
 
 雲や月の動き、カイワレダイコンの発芽、交差点での自動車や歩行者の動きなどを撮影すると面白い。
 
+9. 動画の撮影
+
+OpenCVでは、画像だけでなく動画を撮影することもできる。  
+以下のページから、OpenCVで動画を撮影・保存するPythonプログラムをダウンロードし、`/home/pi`にコピーする。
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/video.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/video.py)
+
+実行権限の付加と実行
+
+`$cd`  
+`$sudo chmod a+x ./video.py`  
+`$python ./video.py`
+
+プログラムを実行し、適当なところで`Ctrl+C`で停止する。`/home/pi`に撮影開始時点の日付時刻をファイル名とする動画ファイルが生成されている。
+動画ファイルを再生し、撮影されているか確認してみよう。Raspberry Piで再生できないときは、USBメモリなどでWindowsPCにコピーして再生する。
+
 ---
 
 

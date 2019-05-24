@@ -56,6 +56,14 @@ hogehoge.pyをgeditで開く
 
 ---
 
+### 参考:エディタThonny
+
+Raspberry PiでPythonプログラミングをするには、「Thonny」と呼ばれるIDEが便利である。  
+ThonnyはRaspberry Piに標準でインストールされており、すぐに使い始めることができる。  
+Raspberry PiをGUIで使用し、Pythonプログラムを編集する場合、<u>geditよりもThonnyがおすすめ</u>。  
+Raspberry Pi左上のスタートメニューをクリックし、「プログラミング」の項目の中から起動できる。
+
+---
 
 ### 3. Hello, world!
 

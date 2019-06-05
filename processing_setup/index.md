@@ -7,6 +7,10 @@
 
 [https://processing.org/download/](https://processing.org/download/)
 
+<img src="img1.png" alt="" width="70%">
+
+<img src="img.png" alt="" width="70%">
+
 通常は、「Windows 64bit版」を選択する。  
 ダウンロードしたzipファイルを適当な場所で解凍するだけで使用可能。
 

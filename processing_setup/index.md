@@ -1,7 +1,8 @@
 <style>
   .image_center {
-        width: 80%;
-        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
   }
 </style>
 
@@ -43,7 +44,7 @@
 
 7.`preferences.txt`の93～96行目に以下のような記述を書き加える
 
-"""
+```
 ＜変更前＞
 proxy.http.host=
 proxy.http.port=
@@ -55,7 +56,7 @@ proxy.http.host=<b>proxy.cc.yamaguchi-u.ac.jp</b>
 proxy.http.port=<b>8080/<b>
 proxy.https.host=<b>proxy.cc.yamaguchi-u.ac.jp</b>
 proxy.https.port=<b>8080</b>
-"""
+```
 
 8.`preferences.txt`を上書き保存
 

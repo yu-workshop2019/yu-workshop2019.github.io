@@ -60,7 +60,7 @@
 
 2.LEDを点滅させるためのPythonプログラムをダウンロード  
 以下のページから、LEDを点滅させるためのPythonプログラムをダウンロードし、`/home/pi`にコピーする。
-[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchica.py)
+[https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchika.py](https://github.com/yu-workshop2019/yu-workshop2019_docs/blob/master/lchika.py)
 
 3.実行権限の追加
 

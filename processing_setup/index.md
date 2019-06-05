@@ -98,3 +98,7 @@ proxy.https.port=8080
 より詳細な情報については以下のWebページを参照
 
 [Processing3をプロキシ環境下で使う](https://sites.google.com/site/jglabo701/processing3wopurokishi-huan-jing-xiade-shiu)
+
+＜注意＞
+※学外で、ネットワーク経由でProcessingにライブラリを追加するためには上記の設定を元に戻す。
+

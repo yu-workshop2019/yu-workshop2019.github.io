@@ -45,11 +45,9 @@
 <img src="img3.png" alt="" class="image_center">
 
 
-
 4.フォルダが開く
 
-<img src="img4.png" alt="" class="image_center">
-
+<img src="img4-1.png" alt="" class="image_center">
 
 
 5．Processingを閉じる
@@ -58,10 +56,11 @@
 6.開いたフォルダ内の`preferences.txt`をメモ帳などで開く  
 `preferences.txt`が見当たらず、代わりに`preferences.old`が2つあるようなときには、キーボードの「`F5`」キーを押すと、`references.txt`が現れる。  
 
-<img src="img5.png" alt="" class="image_center">
+<img src="img4-2.png" alt="" class="image_center">
 
 
 7.`preferences.txt`の93～96行目に以下のような記述を書き加える
+
 
 ```
 ＜変更前＞
@@ -77,6 +76,11 @@ proxy.https.host=proxy.cc.yamaguchi-u.ac.jp
 proxy.https.port=8080
 ```
 
+＜変更前＞
+<img src="img5.png" alt="" class="image_center">
+
+
+＜変更後＞
 <img src="img6.png" alt="" class="image_center">
 
 

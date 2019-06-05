@@ -54,7 +54,7 @@
 
 
 6.開いたフォルダ内の`preferences.txt`をメモ帳などで開く  
-`preferences.txt`が見当たらず、代わりに`preferences.old`が2つあるようなときには、キーボードの「`F5`」キーを押すと、`references.txt`が現れる。  
+※`preferences.txt`が見当たらず、代わりに`preferences.old`が2つあるようなときには、キーボードの「`F5`」キーを押すと、`preferences.txt`が現れる
 
 <img src="img5.png" alt="" class="image_center">
 

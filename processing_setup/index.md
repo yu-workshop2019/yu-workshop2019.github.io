@@ -15,7 +15,7 @@
 
 [https://processing.org/download/](https://processing.org/download/)
 
-<img src="img1.png" alt="" class="image_center">
+<img src="img1.png" alt="" class="image_center" />
 
 <img src="img.png" alt="" width="70%">
 

@@ -3,8 +3,10 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 70%;
+        object-fit: contain;
   }
 </style>
 

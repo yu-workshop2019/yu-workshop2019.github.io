@@ -3,6 +3,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
   }
 </style>
 
@@ -35,7 +37,6 @@
 <img src="img2.png" alt="" class="image_center">
 
 
-
 3.ウィンドウ下部の「詳細な設定は、次のファイルを編集することで可能です」の下の行をクリック  
 例）`C:\Users\USERNAME\AppData\Roaming\Processing\preferences.txt`
 
@@ -58,9 +59,7 @@
 <img src="img5.png" alt="" class="image_center">
 
 
-
 7.`preferences.txt`の93～96行目に以下のような記述を書き加える
-
 
 ```
 ＜変更前＞
@@ -76,9 +75,7 @@ proxy.https.host=proxy.cc.yamaguchi-u.ac.jp
 proxy.https.port=8080
 ```
 
-
 <img src="img6.png" alt="" class="image_center">
-
 
 
 8.`preferences.txt`を上書き保存
@@ -90,7 +87,6 @@ proxy.https.port=8080
 10.追加のライブラリがインストールできるようになる
 
 <img src="img7.png" alt="" class="image_center">
-
 
 
 より詳細な情報については以下のWebページを参照

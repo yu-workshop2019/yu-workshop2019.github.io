@@ -102,3 +102,14 @@ proxy.https.port=8080
 ＜注意＞
 ※学外で、ネットワーク経由でProcessingにライブラリを追加するためには上記の設定を元に戻す。
 
+
+### サンプルプログラム
+
+ファイル -> サンプル から、さまざまなサンプルプログラムを試すことができる。
+
+Processingでできることについては以下のサイトも参考になる。
+
+[https://processing.org/examples/](https://processing.org/examples/)
+
+[https://processing.org/examples/follow3.html](https://processing.org/examples/follow3.html)
+

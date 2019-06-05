@@ -47,7 +47,7 @@
 
 4.フォルダが開く
 
-<img src="img4_1.png" alt="" class="image_center">
+<img src="img4.png" alt="" class="image_center">
 
 
 5．Processingを閉じる
@@ -56,7 +56,7 @@
 6.開いたフォルダ内の`preferences.txt`をメモ帳などで開く  
 `preferences.txt`が見当たらず、代わりに`preferences.old`が2つあるようなときには、キーボードの「`F5`」キーを押すと、`references.txt`が現れる。  
 
-<img src="img4_2.png" alt="" class="image_center">
+<img src="img4a.png" alt="" class="image_center">
 
 
 7.`preferences.txt`の93～96行目に以下のような記述を書き加える

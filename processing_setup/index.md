@@ -1,3 +1,6 @@
+## Processingのダウンロード方法や、学内での使用方法について解説しています。
+
+
 ### Processingのダウンロード
 
 以下のダウンロードサイトからProcessingをダウンロードする。
@@ -5,7 +8,7 @@
 [https://processing.org/download/](https://processing.org/download/)
 
 通常は、「Windows 64bit版」を選択する。  
-ダウンロードしたzipファイルを解凍するだけで使用可能。
+ダウンロードしたzipファイルを適当な場所で解凍するだけで使用可能。
 
 ---
 
@@ -18,15 +21,15 @@
 2.ファイル -> 設定 をクリック
 
 3.ウィンドウ下部の「詳細な設定は、次のファイルを編集することで可能です」の下の行をクリック  
-例）C:\Users\USERNAME\AppData\Roaming\Processing\preferences.txt
+例）'C:\Users\USERNAME\AppData\Roaming\Processing\preferences.txt'
 
 4.フォルダが開く
 
 5．Processingを閉じる
 
-6.preferences.txtをメモ帳などで開く  
-※preferences.txtがないときは、代わりにpreferences.oldをメモ帳などで開いて同様に変更する
-※preferences.oldが2つ以上あるときには、ファイルを更新時刻順に並び替えて、更新時刻が新しい方を編集する
+6.'preferences.txt'をメモ帳などで開く  
+'preferences.txt'が見当たらず、代わりに'preferences.old'が2つあるようなときには、キーボードの「'F5'」キーを押すと、'preferences.txt'が現れる。  
+
 
 7.preferences.txtの一部を以下のように書き換える
 

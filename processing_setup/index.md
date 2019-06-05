@@ -1,3 +1,10 @@
+<style>
+  .image_center {
+        width: 80%;
+        text-align: center;
+  }
+</style>
+
 ## Processingのダウンロード方法や、学内での使用方法について解説しています。
 
 
@@ -7,7 +14,7 @@
 
 [https://processing.org/download/](https://processing.org/download/)
 
-<img src="img1.png" alt="" width="70%">
+<img src="img1.png" alt="" class="image_center">
 
 <img src="img.png" alt="" width="70%">
 

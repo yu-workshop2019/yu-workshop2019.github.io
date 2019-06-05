@@ -35,18 +35,18 @@
 3.ウィンドウ下部の「詳細な設定は、次のファイルを編集することで可能です」の下の行をクリック  
 例）`C:\Users\USERNAME\AppData\Roaming\Processing\preferences.txt`
 
-<img src="img1.png" alt="" class="image_center" />
+<img src="img3.png" alt="" class="image_center" />
 
 4.フォルダが開く
 
-<img src="img3.png" alt="" class="image_center" />
+<img src="img4.png" alt="" class="image_center" />
 
 5．Processingを閉じる
 
 6.開いたフォルダ内の`preferences.txt`をメモ帳などで開く  
 `preferences.txt`が見当たらず、代わりに`preferences.old`が2つあるようなときには、キーボードの「`F5`」キーを押すと、`references.txt`が現れる。  
 
-<img src="img4.png" alt="" class="image_center" />
+<img src="img5.png" alt="" class="image_center" />
 
 7.`preferences.txt`の93～96行目に以下のような記述を書き加える
 
@@ -64,7 +64,7 @@ proxy.https.host=proxy.cc.yamaguchi-u.ac.jp
 proxy.https.port=8080
 ```
 
-<img src="img5.png" alt="" class="image_center" />
+<img src="img6.png" alt="" class="image_center" />
 
 8.`preferences.txt`を上書き保存
 
@@ -72,7 +72,7 @@ proxy.https.port=8080
 
 10.追加のライブラリがインストールできるようになる
 
-<img src="img6.png" alt="" class="image_center" />
+<img src="img7.png" alt="" class="image_center" />
 
 より詳細な情報については以下のWebページを参照
 

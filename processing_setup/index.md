@@ -7,6 +7,7 @@
         margin-bottom: 10%;
         width: 70%;
         object-fit: contain;
+        border: none;
   }
 </style>
 
@@ -19,7 +20,7 @@
 
 [https://processing.org/download/](https://processing.org/download/)
 
-<img src="img1.png" alt="" class="image_center">
+<a href="img1.png"> <img src="img1.png" alt="" class="image_center"></a>
 
 通常は、「Windows 64bit版」を選択する。  
 ダウンロードしたzipファイルを適当な場所で解凍するだけで使用可能。
@@ -36,18 +37,18 @@
 
 2.ファイル -> 設定 をクリック
 
-<img src="img2.png" alt="" class="image_center">
+<a href="img3.png"> <img src="img2.png" alt="" class="image_center"></a>
 
 
 3.ウィンドウ下部の「詳細な設定は、次のファイルを編集することで可能です」の下の行をクリック  
 例）`C:\Users\USERNAME\AppData\Roaming\Processing\preferences.txt`
 
-<img src="img3.png" alt="" class="image_center">
+<a href="img3.png"> <img src="img3.png" alt="" class="image_center"></a>
 
 
 4.フォルダが開く
 
-<img src="img4.png" alt="" class="image_center">
+<a href="img4.png"> <img src="img4.png" alt="" class="image_center"></a>
 
 
 5．Processingを閉じる
@@ -56,7 +57,7 @@
 6.開いたフォルダ内の`preferences.txt`をメモ帳などで開く  
 ※`preferences.txt`が見当たらず、代わりに`preferences.old`が2つあるようなときには、キーボードの「`F5`」キーを押すと、`preferences.txt`が現れる
 
-<img src="img5.png" alt="" class="image_center">
+<a href="img5.png"> <img src="img5.png" alt="" class="image_center"></a>
 
 
 7.`preferences.txt`の93～96行目に以下のような記述を書き加える
@@ -77,11 +78,11 @@ proxy.https.port=8080
 ```
 
 ＜変更前＞
-<img src="img6.png" alt="" class="image_center">
+<a href="img6.png"> <img src="img6.png" alt="" class="image_center"></a>
 
 
 ＜変更後＞
-<img src="img7.png" alt="" class="image_center">
+<a href="img7.png"> <img src="img7.png" alt="" class="image_center"></a>
 
 
 8.`preferences.txt`を上書き保存
@@ -92,7 +93,7 @@ proxy.https.port=8080
 
 10.追加のライブラリがインストールできるようになる
 
-<img src="img8.png" alt="" class="image_center">
+<a href="img8.png"> <img src="img8.png" alt="" class="image_center"></a>
 
 
 より詳細な情報については以下のWebページを参照

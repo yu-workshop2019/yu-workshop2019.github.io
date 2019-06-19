@@ -301,7 +301,8 @@ C270が認識されていれば、`logitech USB Camera`などの表示が見つ�
 Pythonなどから画像を取り扱うためのライブラリであるOpenCVをインストールする。  
 ターミナル上で以下のコマンドを実行。
 
-`$sudo apt-get install libopencv-dev python-opencv`  
+`$sudo apt-get install libopencv-dev`  
+`$sudo apt-get install python-opencv`  
 
 このコマンドの実行が完了するにはしばらく時間がかかることがある。
 

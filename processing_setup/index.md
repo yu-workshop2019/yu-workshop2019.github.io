@@ -29,7 +29,7 @@
 
 ### プロキシの設定
 
-<font color="red"><u>学内で、ネットワーク経由でProcessingにライブラリを追加</u></font>するためには以下の設定を行う。
+※<font color="red"><u>学内で、ネットワーク経由でProcessingにライブラリを追加</u></font>するためには以下の設定（プロキシ設定）をする。  
 
 1．Processingを起動
 

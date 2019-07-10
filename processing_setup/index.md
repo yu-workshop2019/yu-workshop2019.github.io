@@ -29,7 +29,7 @@
 
 ### プロキシの設定
 
-学内で、ネットワーク経由でProcessingにライブラリを追加するためには以下の設定を行う。
+<font color="red"><u>学内で、ネットワーク経由でProcessingにライブラリを追加</u>するためには以下の設定を行う。</font>
 
 
 1．Processingを起動
@@ -101,7 +101,8 @@ proxy.https.port=8080
 [Processing3をプロキシ環境下で使う](https://sites.google.com/site/jglabo701/processing3wopurokishi-huan-jing-xiade-shiu)
 
 ＜注意＞
-※学外で、ネットワーク経由でProcessingにライブラリを追加するためには上記の設定を元に戻す。
+<font color="red">※<u>学外で、</u>ネットワーク経由でProcessingにライブラリを追加するためには上記の設定（プロキシ設定）は不要。  
+<u>設定を元に戻す</u>。具体的には、追加した行（93～96行目）の行頭に"#"をつけることで無効化できる。
 
 
 ### サンプルプログラム
